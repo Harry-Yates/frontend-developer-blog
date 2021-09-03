@@ -1,0 +1,96 @@
+@import "variables.scss";
+@import "harry-profile.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* =================
+Typography
+================= */
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  color: $secondary-colour-gray;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  color: $primary-colour-purple;
+}
+
+a {
+  color: $primary-colour-purple;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* =================
+Navigation
+================= */
+
+.hi-logo {
+  height: 30px;
+
+  margin: 10px;
+  width: auto;
+}
+
+nav {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 20%;
+}
+
+nav li {
+  margin-left: 9em;
+}
+
+nav a {
+  text-decoration: none;
+  color: $secondary-colour-gray;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  padding: 0.25em 0;
+  position: fixed;
+  top: 13.5px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: $primary-colour-purple;
+}
+
+.current-page:hover {
+  border-bottom: 1px solid $primary-colour-purple;
+}
