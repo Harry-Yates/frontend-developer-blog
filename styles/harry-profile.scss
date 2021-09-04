@@ -1,9 +1,8 @@
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 200px;
+  top: 170px;
   padding-left: 40px;
-  padding-bottom: 50px;
   display: flex;
   position: relative;
   min-width: 850px;
@@ -20,7 +19,7 @@
   box-sizing: border-box;
   border-radius: 80px;
   margin-left: 30px;
-  margin-bottom: 200px;
+  top: 200px;
   object-fit: cover;
 }
 
@@ -59,7 +58,6 @@
   left: 26%;
   right: 0%;
   top: 52.43%;
-  // bottom: 0.25%;
   font-size: 17px;
   line-height: 27px;
   letter-spacing: 0.6px;
@@ -75,6 +73,6 @@ i {
   width: 148.73px;
   height: 22.22px;
   left: 590px;
-  top: 370px;
+  top: 140px;
   margin: 0, 20px;
 }

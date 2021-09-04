@@ -19,9 +19,10 @@ Typography
 
 h1,
 h2,
-h3 {
+h3,
+p {
   font-family: "Nunito", serif;
-  font-weight: 400;
+  font-weight: 300;
   color: $secondary-colour-gray;
   margin-top: 0;
 }
@@ -29,10 +30,6 @@ h3 {
 h1 {
   font-size: 2rem;
   margin: 0;
-}
-
-h3 {
-  color: $primary-colour-purple;
 }
 
 a {
@@ -49,30 +46,28 @@ Navigation
 
 .hi-logo {
   height: 30px;
-
   margin: 10px;
   width: auto;
 }
 
 nav {
   height: 50px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #ffffff;
   box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  z-index: 1;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
   position: absolute;
   right: 20%;
 }
 
 nav li {
-  margin-left: 9em;
+  margin-left: 6em;
 }
 
 nav a {
@@ -89,8 +84,93 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: $primary-colour-purple;
+  font-size: 0.82rem;
 }
 
 .current-page:hover {
   border-bottom: 1px solid $primary-colour-purple;
+}
+
+/* Solid border */
+hr.solid {
+  position: absolute;
+  border-top: 1px solid $secondary-colour-gray;
+  width: 650px;
+  top: 190px;
+  left: 70px;
+}
+
+/* =================
+Post Containers
+================= */
+
+.container-post {
+  position: absolute;
+  max-width: 750px;
+  width: 650px;
+  height: 600px;
+  left: 70px;
+  top: 250px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container-post img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.container-post h3,
+p {
+  display: flex;
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.container-post p {
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-post button {
+  margin-left: 272px;
+  background-color: $primary-colour-purple;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background: #8f44fd;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.container-post button:hover {
+  background: #8f44fd;
+}
+
+.post-date {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background-color: #bab9be;
+  color: white;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+  background: $secondary-colour-gray;
+  bottom: 40px;
+  border: none;
+  z-index: 1;
+  font-size: 0.85rem;
+  padding-left: 9px;
+  padding-top: 1px;
 }

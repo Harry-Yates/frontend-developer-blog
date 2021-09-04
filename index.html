@@ -17,26 +17,45 @@
   </head>
   <body>
     <header>
+
+      <! –– Nav Section ––>
+
         <nav>
 			<img src="./assets/logo/logo.png" alt="logo" class="hi-logo">
           <ul>
             <li><a class="current-page" href="#">Home</a></li>
-            <li><a href="#"">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+
+        <! –– Profile Header Section ––>
+
         <div class="container">
         <main class=harry-profile>
-          <img src="/assets/images/harry_picture.png" alt="harry" class="harry-pic">
+          <img src="./assets/images/harry_picture.png" alt="harry" class="harry-pic">
           <h1 class="profile-name">Harry Yates</h1>
           <h1 class="profile-header">Frontend Developer Blog</h1>
           <p class="profile-copy">A blog documenting my coding journey. I’ll post about CSS, JS, React and interview questions 'n answers. Reach out and connect! 🤓</p>
           <div class="social-media-icons">
-            <i style="padding-left:10px;" class="fab fa-github"></i>
-            <i style="padding-left:10px;" class="fab fa-linkedin"></i>
-            <i style="padding-left:10px;" class="fab fa-twitter"></i>
-            <i style="padding-left:10px;" class="fas fa-envelope-square"></i>
+            <a href="https://github.com/Harry-Yates"><i style="padding-left:10px;" class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harryjtyates/"><i style="padding-left:10px;" class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/HA9RY"><i style="padding-left:10px;" class="fab fa-twitter" ></i></a>
+            <a href="#"><i style="padding-left:10px;" class="fas fa-envelope-square"></i></a>
           </div>
+          <hr class="solid">
+
+          <! –– Main Blog Section ––>
+
+          <div class="container-post">
+            <div class="post-date">Aug 15</div>
+            <img src="https://source.unsplash.com/random/500x300" alt="A random image" />
+            <h3>A post about JavaScript</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat assumenda ipsam voluptatem expedita adipisci architecto enim nulla molestias ex fugit.
+          </p>
+          <button>Read More</button>
+        </div>
+
         </main>
     </header>
     <script src="./js/script.js"></script>

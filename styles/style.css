@@ -7,9 +7,8 @@ Background Colours
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 200px;
+  top: 170px;
   padding-left: 40px;
-  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +28,7 @@ Background Colours
           box-sizing: border-box;
   border-radius: 80px;
   margin-left: 30px;
-  margin-bottom: 200px;
+  top: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -83,7 +82,7 @@ i {
   width: 148.73px;
   height: 22.22px;
   left: 590px;
-  top: 370px;
+  top: 140px;
   margin: 0, 20px;
 }
 
@@ -105,9 +104,10 @@ Typography
 ================= */
 h1,
 h2,
-h3 {
+h3,
+p {
   font-family: "Nunito", serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #77838f;
   margin-top: 0;
 }
@@ -115,10 +115,6 @@ h3 {
 h1 {
   font-size: 2rem;
   margin: 0;
-}
-
-h3 {
-  color: #5d5fef;
 }
 
 a {
@@ -140,28 +136,25 @@ Navigation
 
 nav {
   height: 50px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  z-index: 1;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   right: 20%;
 }
 
 nav li {
-  margin-left: 9em;
+  margin-left: 6em;
 }
 
 nav a {
@@ -178,9 +171,108 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: #5d5fef;
+  font-size: 0.82rem;
 }
 
 .current-page:hover {
   border-bottom: 1px solid #5d5fef;
+}
+
+/* Solid border */
+hr.solid {
+  position: absolute;
+  border-top: 1px solid #77838f;
+  width: 650px;
+  top: 190px;
+  left: 70px;
+}
+
+/* =================
+Post Containers
+================= */
+.container-post {
+  position: absolute;
+  max-width: 750px;
+  width: 650px;
+  height: 600px;
+  left: 70px;
+  top: 250px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container-post img {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.container-post h3,
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.container-post p {
+  top: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-post button {
+  margin-left: 272px;
+  background-color: #5d5fef;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background: #8f44fd;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.container-post button:hover {
+  background: #8f44fd;
+}
+
+.post-date {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background-color: #bab9be;
+  color: white;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+  background: #77838f;
+  bottom: 40px;
+  border: none;
+  z-index: 1;
+  font-size: 0.85rem;
+  padding-left: 9px;
+  padding-top: 1px;
 }
 /*# sourceMappingURL=style.css.map */
