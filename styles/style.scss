@@ -108,11 +108,11 @@ Post Containers
   position: absolute;
   max-width: 750px;
   width: 650px;
-  height: 600px;
+  height: 630px;
   left: 70px;
   top: 250px;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
 }
 
 .container-post img {
@@ -173,4 +173,136 @@ p {
   font-size: 0.85rem;
   padding-left: 9px;
   padding-top: 1px;
+}
+
+/* =================
+Post Containers 1
+================= */
+
+.container-post-1 {
+  position: absolute;
+  max-width: 750px;
+  width: 650px;
+  height: 630px;
+  left: 70px;
+  top: 950px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+}
+
+.container-post-1 img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.container-post-1 h3,
+p {
+  display: flex;
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.container-post-1 p {
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-post-1 button {
+  margin-left: 272px;
+  background-color: $primary-colour-purple;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background: #8f44fd;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.container-post-1 button:hover {
+  background: #8f44fd;
+}
+
+.post-date {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background-color: #bab9be;
+  color: white;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+  background: $secondary-colour-gray;
+  bottom: 40px;
+  border: none;
+  z-index: 1;
+  font-size: 0.85rem;
+  padding-left: 9px;
+  padding-top: 1px;
+}
+
+/* =================
+Post Containers 1
+================= */
+
+.container-post-2 {
+  position: absolute;
+  max-width: 750px;
+  width: 650px;
+  height: 630px;
+  left: 70px;
+  top: 1650px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+}
+
+.container-post-2 img {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.container-post-2 h3,
+p {
+  display: flex;
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.container-post-2 p {
+  top: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-post-2 button {
+  margin-left: 272px;
+  background-color: $primary-colour-purple;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background: #8f44fd;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.container-post-2 button:hover {
+  background: #8f44fd;
 }
