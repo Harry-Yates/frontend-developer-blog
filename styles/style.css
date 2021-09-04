@@ -73,10 +73,6 @@ Background Colours
   color: #77838f;
 }
 
-i {
-  color: #5d5fef;
-}
-
 .social-media-icons {
   position: absolute;
   width: 148.73px;
@@ -97,6 +93,7 @@ body {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.6;
+  height: 100%;
 }
 
 /* =================
@@ -192,7 +189,6 @@ Post Containers
 ================= */
 .container-post {
   position: absolute;
-  max-width: 750px;
   width: 650px;
   height: 630px;
   left: 70px;
@@ -366,7 +362,7 @@ p {
 }
 
 /* =================
-Post Containers 1
+Post Containers 2
 ================= */
 .container-post-2 {
   position: absolute;
@@ -434,5 +430,99 @@ p {
 
 .container-post-2 button:hover {
   background: #8f44fd;
+}
+
+.pagination {
+  position: absolute;
+  display: inline-block;
+  top: 2350px;
+  left: 230px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  color: white;
+  background-color: #8f44fd;
+  float: left;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* =================
+Stay in the know Section
+================= */
+.stay-in-the-know {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 2000px;
+  height: 400px;
+  top: 2300px;
+  right: -945%;
+  background: #f7fafd;
+}
+
+.stay-in-the-know p {
+  padding-bottom: 20px;
+}
+
+.fix {
+  position: absolute;
+  width: 100%;
+  left: -310px;
+  margin: 0%;
+}
+
+footer {
+  position: relative;
+}
+
+.email-submission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+  height: 2.4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  width: 300px;
+  border: none;
+  padding-left: 20px;
+  color: #bab9be;
+}
+
+.stay-in-the-know button {
+  position: absolute;
+  bottom: 127px;
+  left: 1115px;
+  height: 30px;
+  width: 30px;
+  background-color: #8f44fd;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
