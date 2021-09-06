@@ -334,10 +334,50 @@ Final Section
 
 .finalsection {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: relative;
-  top: 400px;
-  flex-direction: column;
+  top: 380px;
+  flex-direction: row;
   height: 400px;
 }
+
+.finalsection p {
+  width: 300px;
+  left: 300px;
+}
+
+.finalsection .closing-address {
+padding-bottom: 82px;
+margin: 0;
+
+}
+
+.closing-address h3 {
+padding-left: 47px;
+margin: 0;
+
+  }
+
+  hr.solid2 {
+    position: relative;
+    border-top: 1px solid rgba(140, 139, 139, 0.3);
+    width: 1500px;
+    top: 290px;
+    margin: 0, auto;
+    height: 1px;
+  }
+
+  .legals-cont {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+
+  }
+
+  .legals {
+    position: relative;
+    margin: 0, auto;
+    top: 295px;
+  }

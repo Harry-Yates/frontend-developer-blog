@@ -461,18 +461,63 @@ Final Section
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: 400px;
-  -webkit-box-orient: vertical;
+  top: 380px;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 400px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.finalsection p {
+  width: 300px;
+  left: 300px;
+}
+
+.finalsection .closing-address {
+  padding-bottom: 82px;
+  margin: 0;
+}
+
+.closing-address h3 {
+  padding-left: 47px;
+  margin: 0;
+}
+
+hr.solid2 {
+  position: relative;
+  border-top: 1px solid rgba(140, 139, 139, 0.3);
+  width: 1500px;
+  top: 290px;
+  margin: 0, auto;
+  height: 1px;
+}
+
+.legals-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.legals {
+  position: relative;
+  margin: 0, auto;
+  top: 295px;
+}
+
