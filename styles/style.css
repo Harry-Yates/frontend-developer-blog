@@ -87,12 +87,15 @@ Background Colours
           box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: "Nunito", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.6;
+  height: 100vh;
 }
 
 /* =================
@@ -244,7 +247,7 @@ main {
 .social-media-icons {
   position: relative;
   top: 207px;
-  left: 130px;
+  left: 90px;
 }
 
 /* Solid border */
@@ -274,13 +277,7 @@ Post Containers
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 2%;
-}
-
-main {
-  height: 100%;
 }
 
 .container-post {
@@ -289,8 +286,8 @@ main {
       -ms-grid-row-align: center;
       align-self: center;
   width: 560px;
-  height: 560px;
-  top: 220px;
+  height: 610px;
+  top: 250px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -523,14 +520,11 @@ hr.solid2 {
   top: 295px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   .profile {
     margin: 0;
-    height: 50px;
-    width: 400px;
-  }
-  nav {
-    width: 400px;
+    height: 150px;
+    width: 375px;
   }
   nav ul {
     list-style: none;
@@ -538,22 +532,35 @@ hr.solid2 {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    padding-right: 30px;
-    margin: 1px;
+    right: 20%;
+  }
+  nav li {
+    margin-left: 4em;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
   .harry-pic {
     position: absolute;
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
     border: 4px solid #8f44fd;
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    left: 80px;
+    left: 72px;
     top: -50px;
   }
   .profile-name {
-    display: none;
+    position: absolute;
+    height: 48px;
+    width: 390px;
+    font-family: Nunito;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 1.425px;
+    left: 50px;
+    top: 55px;
+    font-size: 25px;
   }
   .profile-header {
     position: absolute;
@@ -564,21 +571,39 @@ hr.solid2 {
     line-height: 48px;
     letter-spacing: 1.425px;
     left: -30px;
-    top: 50px;
+    top: 90px;
     font-size: 25px;
   }
   .profile-copy {
-    display: none;
+    position: absolute;
+    height: 48px;
+    width: 80%;
+    line-height: 20px;
+    font-family: Nunito;
+    font-size: 13px;
+    left: -30px;
+    top: 160px;
+    text-align: center;
   }
   .social-media-icons i {
     color: #8f44fd;
-    display: none;
   }
   .social-media-icons {
-    display: none;
+    position: absolute;
+    height: 48px;
+    width: 200px;
+    left: 20px;
+    top: 230px;
+    text-align: center;
   }
   hr.solid {
-    display: none;
+    position: relative;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    text-align: center;
+    top: 270PX;
+    z-index: 1;
   }
   .main-post-body {
     display: -webkit-box;
@@ -594,28 +619,20 @@ hr.solid2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 2%;
-  }
-  main {
-    height: 100%;
   }
   .container-post {
     position: relative;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 350px;
-    height: 560px;
-    top: 220px;
+    width: 320px;
+    height: 400px;
+    top: 210px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
     margin: 10px;
+    font-size: 0.7em;
   }
   .container-post button {
-    margin-left: 130px;
+    margin-left: 100px;
     background-color: #8f44fd;
     color: white;
     width: 6rem;
