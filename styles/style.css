@@ -203,7 +203,7 @@ main {
   position: relative;
   height: 160px;
   border: 4px solid #8f44fd;
-  border-radius: 95px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   left: -280px;
@@ -495,7 +495,7 @@ Final Section
 hr.solid2 {
   position: relative;
   border-top: 1px solid rgba(140, 139, 139, 0.3);
-  width: 100vw;
+  width: 100%;
   top: 290px;
   margin: 0, auto;
   height: 1px;
@@ -521,5 +521,130 @@ hr.solid2 {
   position: relative;
   margin: 0, auto;
   top: 295px;
+}
+
+@media only screen and (max-width: 400px) {
+  .profile {
+    margin: 0;
+    height: 50px;
+    width: 400px;
+  }
+  nav {
+    width: 400px;
+  }
+  nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    padding-right: 30px;
+    margin: 1px;
+  }
+  .harry-pic {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border: 4px solid #8f44fd;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: 80px;
+    top: -50px;
+  }
+  .profile-name {
+    display: none;
+  }
+  .profile-header {
+    position: absolute;
+    height: 48px;
+    width: 390px;
+    font-family: Nunito;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 1.425px;
+    left: -30px;
+    top: 50px;
+    font-size: 25px;
+  }
+  .profile-copy {
+    display: none;
+  }
+  .social-media-icons i {
+    color: #8f44fd;
+    display: none;
+  }
+  .social-media-icons {
+    display: none;
+  }
+  hr.solid {
+    display: none;
+  }
+  .main-post-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2%;
+  }
+  main {
+    height: 100%;
+  }
+  .container-post {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 350px;
+    height: 560px;
+    top: 220px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    margin: 10px;
+  }
+  .container-post button {
+    margin-left: 130px;
+    background-color: #8f44fd;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    background: #8f44fd;
+    border: none;
+  }
+  .finalsection {
+    display: none;
+  }
+  .stay-in-the-know {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #f7fafd;
+    height: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
