@@ -281,6 +281,17 @@ main {
   height: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+    width: 1500px;
+  }
+  body {
+    height: 100%;
+    width: 1500px;
+  }
+}
+
 .container-post {
   position: relative;
   -ms-flex-item-align: center;
@@ -520,4 +531,4 @@ hr.solid2 {
   margin: 0, auto;
   top: 295px;
 }
-
+/*# sourceMappingURL=style.css.map */

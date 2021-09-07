@@ -186,6 +186,21 @@ main {
   height: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+
+body {
+  height: 100%;
+  width: 1500px;
+}
+
+body {
+  height: 100%;
+  width: 1500px;
+}
+
+
+}
+
 .container-post {
   position: relative;
   align-self: center;
