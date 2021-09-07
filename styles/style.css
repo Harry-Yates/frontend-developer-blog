@@ -182,16 +182,18 @@ main {
       justify-content: space-around;
 }
 
-.container {
+.profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   margin: 0 auto;
   top: 150px;
   height: 200px;
+  width: 1000px;
   border-radius: 5px;
   left: 60px;
   padding: 0px;
@@ -279,17 +281,6 @@ Post Containers
 
 main {
   height: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    height: 100%;
-    width: 1500px;
-  }
-  body {
-    height: 100%;
-    width: 1500px;
-  }
 }
 
 .container-post {
@@ -504,7 +495,7 @@ Final Section
 hr.solid2 {
   position: relative;
   border-top: 1px solid rgba(140, 139, 139, 0.3);
-  width: 1500px;
+  width: 100vw;
   top: 290px;
   margin: 0, auto;
   height: 1px;

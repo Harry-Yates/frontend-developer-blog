@@ -99,12 +99,14 @@ display: flex;
 justify-content: space-around;
 }
 
-.container {
+.profile {
   display: flex;
   justify-content: center;
+  position: relative;
   margin: 0 auto;
   top: 150px;
   height: 200px;
+  width: 1000px;
   // background-color: rgba(232, 230, 226, 0.1);
   border-radius: 5px;
   left: 60px;
@@ -184,21 +186,6 @@ Post Containers
 
 main {
   height: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-
-body {
-  height: 100%;
-  width: 1500px;
-}
-
-body {
-  height: 100%;
-  width: 1500px;
-}
-
-
 }
 
 .container-post {
@@ -377,7 +364,7 @@ margin: 0;
   hr.solid2 {
     position: relative;
     border-top: 1px solid rgba(140, 139, 139, 0.3);
-    width: 1500px;
+    width: 100vw;
     top: 290px;
     margin: 0, auto;
     height: 1px;
