@@ -318,7 +318,7 @@ letter-spacing: 0.13em;
   width: 300px;
   border: none;
   padding-left: 20px;
-  color: #bab9be;
+  color: #9b9a9f;
   margin-top: 20px;
 }
 
@@ -453,7 +453,7 @@ font-family: Nunito;
 font-size: 38px;
 line-height: 48px;
 letter-spacing: 1.425px;
-left: -27px;
+left: -28px;
 top: 90px;
 font-size: 25px;
 }
@@ -466,7 +466,7 @@ line-height: 20px;
 font-family: Nunito;
 font-size: 13px;
 left: -23px;
-top: 160px;
+top: 156px;
 text-align: center;
 }
 
@@ -479,7 +479,7 @@ position: absolute;
 height: 48px;
 width: 200px;
 left: 23px;
-top: 229px;
+top: 245px;
 text-align: center;
 }
 
@@ -705,37 +705,37 @@ align-items: center;
 }
 
 .harry-pic {
+  display: flex;
   position: absolute;
   border: 4px solid #8f44fd;
   border-radius: 50%;
   object-fit: cover;
-  left: 78px;
   top: -50px;
   margin: 0 auto;
 }
 
 .profile-name {
   position: absolute;
+  justify-content: center;
+  align-items: center;
   height: 48px;
-  width: 390px;
   font-family: Nunito;
   font-size: 38px;
   line-height: 48px;
   letter-spacing: 1.425px;
-  left: 59px;
   top: 55px;
   font-size: 25px;
 }
 
 .profile-header {
   position: absolute;
+  justify-content: center;
+  align-items: center;
   height: 48px;
-  width: 390px;
   font-family: Nunito;
   font-size: 38px;
   line-height: 48px;
   letter-spacing: 1.425px;
-  left: -28px;
   top: 90px;
   font-size: 25px;
 }
@@ -956,7 +956,7 @@ flex-direction: row;
     position: relative;
     text-align: center;
     margin: 0, auto;
-    top: 620px;
+    top: 621px;
     padding-bottom: 10px;
     font-size: 10px;
   }
