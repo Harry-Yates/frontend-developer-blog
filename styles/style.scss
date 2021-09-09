@@ -428,7 +428,7 @@ width: 100px;
 border: 4px solid #8f44fd;
 border-radius: 50%;
 object-fit: cover;
-left: 79px;
+left: 74px;
 top: -50px;
 }
 
@@ -504,7 +504,7 @@ flex-direction: column;
 position: relative;
 
 width: 420px;
-height: 415px;
+height: 450px;
 top: 510px;
 border-radius: 4px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -513,7 +513,7 @@ font-size: 0.7em;
 }
 
 .container-post button {
-margin-left: 100px;
+margin-left: 155px;
 background-color: $primary-colour-purple;
 color: white;
 width: 6rem;
@@ -521,6 +521,7 @@ height: 2rem;
 border-radius: 0.4rem;
 background: #8f44fd;
 border: none;
+margin-bottom: 10px;
 }
 
 .post-date {
@@ -705,13 +706,12 @@ align-items: center;
 
 .harry-pic {
   position: absolute;
-  height: 100px;
-  width: 100px;
   border: 4px solid #8f44fd;
   border-radius: 50%;
   object-fit: cover;
-  left: 82px;
+  left: 78px;
   top: -50px;
+  margin: 0 auto;
 }
 
 .profile-name {
@@ -722,7 +722,7 @@ align-items: center;
   font-size: 38px;
   line-height: 48px;
   letter-spacing: 1.425px;
-  left: 57px;
+  left: 59px;
   top: 55px;
   font-size: 25px;
 }
@@ -761,7 +761,7 @@ align-items: center;
   height: 48px;
   width: 200px;
   left: 26px;
-  top: 229px;
+  top: 232px;
   text-align: center;
 }
 

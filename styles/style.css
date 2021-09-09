@@ -575,7 +575,7 @@ Media queries
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    left: 79px;
+    left: 74px;
     top: -50px;
   }
   .profile-name {
@@ -651,7 +651,7 @@ Media queries
   .container-post {
     position: relative;
     width: 420px;
-    height: 415px;
+    height: 450px;
     top: 510px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -660,7 +660,7 @@ Media queries
     font-size: 0.7em;
   }
   .container-post button {
-    margin-left: 100px;
+    margin-left: 155px;
     background-color: #8f44fd;
     color: white;
     width: 6rem;
@@ -668,6 +668,7 @@ Media queries
     border-radius: 0.4rem;
     background: #8f44fd;
     border: none;
+    margin-bottom: 10px;
   }
   .post-date {
     position: absolute;
@@ -863,14 +864,13 @@ Final Section
   }
   .harry-pic {
     position: absolute;
-    height: 100px;
-    width: 100px;
     border: 4px solid #8f44fd;
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    left: 82px;
+    left: 78px;
     top: -50px;
+    margin: 0 auto;
   }
   .profile-name {
     position: absolute;
@@ -880,7 +880,7 @@ Final Section
     font-size: 38px;
     line-height: 48px;
     letter-spacing: 1.425px;
-    left: 57px;
+    left: 59px;
     top: 55px;
     font-size: 25px;
   }
@@ -915,7 +915,7 @@ Final Section
     height: 48px;
     width: 200px;
     left: 26px;
-    top: 229px;
+    top: 232px;
     text-align: center;
   }
   hr.solid {
