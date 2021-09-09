@@ -748,7 +748,7 @@ align-items: center;
   font-family: Nunito;
   font-size: 13px;
   left: -23px;
-  top: 160px;
+  top: 155px;
   text-align: center;
 }
 
@@ -760,7 +760,7 @@ align-items: center;
   position: absolute;
   height: 48px;
   width: 200px;
-  left: 26px;
+  left: 23px;
   top: 232px;
   text-align: center;
 }
@@ -787,7 +787,7 @@ hr.solid {
 
   width: 320px;
   height: 415px;
-  top: 510px;
+  top: 492px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   margin: 10px;
@@ -796,7 +796,11 @@ hr.solid {
 
 .container-post button {
   position: relative;
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 22px;
   background-color: $primary-colour-purple;
   color: white;
   width: 6rem;

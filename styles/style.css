@@ -914,7 +914,7 @@ Final Section
     font-family: Nunito;
     font-size: 13px;
     left: -23px;
-    top: 160px;
+    top: 155px;
     text-align: center;
   }
   .social-media-icons i {
@@ -924,7 +924,7 @@ Final Section
     position: absolute;
     height: 48px;
     width: 200px;
-    left: 26px;
+    left: 23px;
     top: 232px;
     text-align: center;
   }
@@ -956,7 +956,7 @@ Final Section
     position: relative;
     width: 320px;
     height: 415px;
-    top: 510px;
+    top: 492px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -965,7 +965,17 @@ Final Section
   }
   .container-post button {
     position: relative;
-    margin-left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 22px;
     background-color: #8f44fd;
     color: white;
     width: 6rem;
