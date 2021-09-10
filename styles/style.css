@@ -4,6 +4,7 @@ Font Colours
 /* =================
 Background Colours
 ================= */
+@import url(/Users/harryyates/Desktop/Code/Projects/Hyper Island/Frontend-Developer-Blog/styles/contact.css);
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +96,6 @@ html, body {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.6;
-  height: 100vh;
 }
 
 /* =================
@@ -121,7 +121,6 @@ p {
 
 h1 {
   font-size: 2rem;
-  margin: 0;
   letter-spacing: 0.06em;
 }
 
@@ -407,60 +406,104 @@ p {
 /* =================
 Stay in the know Section
 ================= */
-.stay-in-the-know {
+.contact-page-frame2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: 360px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f7fafd;
-  height: 340px;
+  background: #fdfaf7;
+  height: 800px;
+  top: 350px;
+  background-color: #f7fafd;
 }
 
-.stay-in-the-know h1 {
+.contact-page-frame2 h1 {
   padding-bottom: 10px;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.10em;
+  font-size: 1.9em;
 }
 
-.stay-in-the-know p {
+.contact-page-frame2 p {
   padding-bottom: 10px;
+  font-size: 0.7em;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 70%;
 }
 
-.email-submission {
+input {
+  display: block;
   position: relative;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   height: 2.4rem;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
-  width: 300px;
+  width: 360px;
   border: none;
   padding-left: 20px;
-  color: #9b9a9f;
+  color: #bab9be;
   margin-top: 20px;
 }
 
-.stay-in-the-know button {
-  position: relative;
+.button {
+  display: block;
+  margin-top: 40px;
   height: 30px;
-  width: 30px;
-  bottom: 37px;
-  right: -130px;
-  background-color: #8f44fd;
+  width: 360px;
+  background-color: #9052fd;
   color: #ffffff;
   border-radius: 3px;
   border: none;
+  -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 150px;
+}
+
+.response2 {
+  display: block;
+  position: relative;
+  background-color: #f7fafd;
+  color: #9052fd;
+  font-weight: 900;
+  margin-top: 20px;
+  width: 375px;
+  height: 380px;
+  margin: 10px, auto;
+  text-align: center;
+  font-size: 0.8em;
+  background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* =================
@@ -924,7 +967,7 @@ Final Section
     position: absolute;
     height: 48px;
     width: 200px;
-    left: 23px;
+    left: 20px;
     top: 232px;
     text-align: center;
   }
@@ -1037,61 +1080,98 @@ Final Section
   /* =================
 Stay in the know Section
 ================= */
-  .stay-in-the-know {
+  .contact-page-frame2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
-    top: 590px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #f7fafd;
-    height: 300px;
+    background: #fdfaf7;
+    height: 800px;
+    top: 600px;
+    background-color: #f7fafd;
   }
-  .stay-in-the-know h1 {
+  .contact-page-frame2 h1 {
     padding-bottom: 10px;
     letter-spacing: 0.10em;
-    font-size: 1.4em;
+    font-size: 1.9em;
   }
-  .stay-in-the-know p {
+  .contact-page-frame2 p {
     padding-bottom: 10px;
     font-size: 0.7em;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    width: 70%;
   }
-  .email-submission {
+  input {
+    display: block;
     position: relative;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     height: 2.4rem;
     background: #ffffff;
     -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
             box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    width: 300px;
+    width: 360px;
     border: none;
     padding-left: 20px;
     color: #bab9be;
     margin-top: 20px;
   }
-  .stay-in-the-know button {
-    position: relative;
+  .button {
+    display: block;
+    margin-top: 40px;
     height: 30px;
-    width: 30px;
-    bottom: 37px;
-    right: -130px;
-    background-color: #8f44fd;
+    width: 360px;
+    background-color: #9052fd;
     color: #ffffff;
     border-radius: 3px;
     border: none;
+    -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 150px;
+  }
+  .response2 {
+    display: block;
+    position: relative;
+    background-color: #f7fafd;
+    color: #9052fd;
+    font-weight: 900;
+    margin-top: 20px;
+    width: 375px;
+    height: 380px;
+    margin: 10px, auto;
+    text-align: center;
+    font-size: 0.8em;
+    background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .contact-submit-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* =================
 Final Section
