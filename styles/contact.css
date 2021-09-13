@@ -44,12 +44,12 @@ Contact Page
     margin-top: 20px;
     }
     
-    .button {
+    #mc-embedded-subscribe {
     display: block;
     margin-top: 40px;
     height: 40px;
     width: 360px;
-    background-color: #9052fd;
+    background-color: #8f44fd;
     color: #ffffff;
     border-radius: 3px;
     border: none;
