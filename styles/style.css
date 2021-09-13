@@ -516,7 +516,7 @@ input {
   height: 380px;
   margin: 10px, auto;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.7em;
   background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
   background-repeat: no-repeat;
   background-position: center;
@@ -862,13 +862,13 @@ Stay in the know Section
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    top: 600px;
+    top: 630px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background: #f7fafd;
-    height: 500px;
+    height: 600px;
   }
   .stay-in-the-know h1 {
     padding-bottom: 10px;
@@ -906,6 +906,22 @@ Stay in the know Section
     color: #ffffff;
     border-radius: 3px;
     border: none;
+  }
+  .response2 {
+    display: block;
+    position: relative;
+    background-color: #f7fafd;
+    color: #9052fd;
+    font-weight: 900;
+    margin-top: 20px;
+    width: 375px;
+    height: 0px;
+    margin: 10px, auto;
+    text-align: center;
+    font-size: 0.7em;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   /* =================
 Final Section
@@ -1240,7 +1256,7 @@ Stay in the know Section
             flex-direction: column;
     background: #fdfaf7;
     height: 800px;
-    top: 600px;
+    top: 630px;
     background-color: #f7fafd;
   }
   .contact-page-frame2 h1 {
@@ -1265,17 +1281,21 @@ Stay in the know Section
     -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
             box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    width: 360px;
+    width: 310px;
     border: none;
     padding-left: 20px;
     color: #bab9be;
     margin-top: 20px;
   }
+  #mc_embed_signup_scroll2 {
+    height: 200px;
+    margin-left: 20px;
+  }
   .button {
     display: block;
     margin-top: 40px;
-    height: 30px;
-    width: 360px;
+    height: 2.4rem;
+    width: 310px;
     background-color: #9052fd;
     color: #ffffff;
     border-radius: 3px;
@@ -1285,21 +1305,20 @@ Stay in the know Section
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 147px;
+    padding-left: 120px;
   }
   .response2 {
-    display: block;
     position: relative;
     background-color: #f7fafd;
     color: #9052fd;
     font-weight: 900;
     margin-top: 20px;
-    width: 375px;
-    height: 380px;
-    margin: 10px, auto;
+    margin-left: 25px;
+    width: 335px;
+    height: 0px;
     text-align: center;
-    font-size: 0.8em;
-    background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
+    font-size: 0.7em;
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
   }
