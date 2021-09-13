@@ -25,16 +25,6 @@
 }
 
 
-input {
-  position: relative;
-  background-color: #8f44fd;
-  color: white;
-  width: 6rem;
-  height: 2rem;
-  border-radius: 0.4rem;
-  background: #8f44fd;
-  border: none;
-}
 
 
 .profile-name {
@@ -479,7 +469,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 150px;
+  padding-left: 145px;
 }
 
 .response2 {
