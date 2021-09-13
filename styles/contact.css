@@ -47,7 +47,7 @@ Contact Page
     .button {
     display: block;
     margin-top: 40px;
-    height: 30px;
+    height: 40px;
     width: 360px;
     background-color: #9052fd;
     color: #ffffff;
@@ -75,12 +75,6 @@ Contact Page
         background-position: center;
 
 
-
        }
 
-    .contact-submit-button {
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-    }
+ 
