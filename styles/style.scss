@@ -183,16 +183,30 @@ Post Containers
   align-items: center;
   flex-direction: column;
   margin-top: -45px;
+  display: flex;
+  justify-content: center;
 }
-.container-post {
+.card-wrapper__card{
   position: relative;
   width: 560px;
   height: 590px;
   top: 250px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-  margin: 15px;
+  margin: 0 auto;
   border-radius: 5px;
+  list-style-type: none;
+}
+
+.card-wrapper__card a {
+  text-decoration: none;
+}
+
+.card-wrapper__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
 }
 
 .container-post img {
@@ -209,6 +223,7 @@ p {
   margin: 10px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
  
 }
 
@@ -223,14 +238,15 @@ p {
 
 .container-post button {
   position: relative;
- margin-top: 15px;
+right: 120px;
+  margin-top: 15px;
   margin-left: 230px;
   background-color: $primary-colour-purple;
   color: white;
   width: 6rem;
   height: 2rem;
   border-radius: 0.4rem;
-  background: #8f44fd;
+  background: #8d50f7;
   border: none;
 }
 

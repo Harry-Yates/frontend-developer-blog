@@ -1,3 +1,10 @@
+/* =================
+Font Colours
+================= */
+/* =================
+Background Colours
+================= */
+@import url(/Users/harryyates/Desktop/Code/Projects/Hyper Island/frontend-developer-blog-main/frontend-developer-blog/styles/contact.css);
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +21,6 @@
   position: relative;
   height: 165px;
   width: 165px;
-  top: 0px;
   border: 4px solid #8f44fd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,15 +30,12 @@
      object-fit: cover;
 }
 
-
-
-
 .profile-name {
   position: absolute;
   height: 48px;
   left: 26%;
   right: 45.73%;
-  top: 40px;
+  top: calc(50% - 48px / 2 - 75px);
   width: 100%;
   font-size: 38px;
   line-height: 48px;
@@ -41,10 +44,11 @@
 
 .profile-header {
   position: absolute;
-  height: 48px;  top: 30px;
+  height: 48px;
+  width: 100%;
   left: 26%;
   right: 13.33%;
-  top: 15px;
+  top: calc(50% - 48px / 2 - 27px);
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -59,7 +63,7 @@
   max-width: 500px;
   left: 26%;
   right: 0%;
-  top: -00px;
+  top: 52.43%;
   font-size: 17px;
   line-height: 27px;
   letter-spacing: 0.6px;
@@ -278,9 +282,11 @@ Post Containers
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: -45px;
+  display: flex;
+  justify-content: center;
 }
 
-.container-post {
+.card-wrapper__card {
   position: relative;
   width: 560px;
   height: 590px;
@@ -288,8 +294,29 @@ Post Containers
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-  margin: 15px;
+  margin: 0 auto;
   border-radius: 5px;
+  list-style-type: none;
+}
+
+.card-wrapper__card a {
+  text-decoration: none;
+}
+
+.card-wrapper__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-post img {
@@ -316,6 +343,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .container-post p {
@@ -333,6 +361,7 @@ p {
 
 .container-post button {
   position: relative;
+  right: 120px;
   margin-top: 15px;
   margin-left: 230px;
   background-color: #8f44fd;
@@ -340,7 +369,7 @@ p {
   width: 6rem;
   height: 2rem;
   border-radius: 0.4rem;
-  background: #8f44fd;
+  background: #8d50f7;
   border: none;
 }
 
@@ -469,7 +498,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 145px;
+  padding-left: 150px;
 }
 
 .response2 {

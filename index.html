@@ -15,7 +15,7 @@
   
     <title>Front End Developer Blog</title>
   </head>
-  <body>
+  <body class="toggle-me" onload="getPosts()">
     <header>
 
       <! –– Nav Section ––>
@@ -54,36 +54,17 @@
 
           <! –– Main Blog Section ––>
           <main>
+     
           <div class="main-post-body">
-          <div class="container-post">
-            <div class="post-date">Aug 15</div>
-            <img src="https://source.unsplash.com/random/500x300" alt="A random image" />
-            <h3>A post about JavaScript</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat assumenda ipsam voluptatem expedita adipisci architecto enim nulla molestias ex fugit.
-          </p>
-          <button>Read More</button>
-          </div>
-       
-          <div class="container-post">
-            <div class="post-date">Aug 15</div>
-            <img src="https://source.unsplash.com/random/500x300" alt="A random image" />
-            <h3>A post about JavaScript</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat assumenda ipsam voluptatem expedita adipisci architecto enim nulla molestias ex fugit.
-          </p>
-          <button>Read More</button>
-        </div>
-
-      
-          <div class="container-post">
-            <div class="post-date">Aug 15</div>
-            <img src="https://source.unsplash.com/random/500x300" alt="A random image" />
-            <h3>A post about JavaScript</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat assumenda ipsam voluptatem expedita adipisci architecto enim nulla molestias ex fugit.
-          </p>
-          <button>Read More</button>
+            <div class="container-post">
+          <h3 class=" container-post text-align-center "></h3>
+          <ul class="card-wrapper" id="postsSummaries">
+          </ul>
+          <section class="max-width">
+           <p></p>
+          </section>
         </div>
       </div>
-    
       </main>
   
     <div class="pagination">
@@ -127,8 +108,6 @@
 </div>
 </div>
 
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[2]='NAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
 
     <div class="finalsection">
 
@@ -148,8 +127,9 @@
   <div class="legals">
     <p>© 2021 Harry Yates Blog. All Rights Reserved.</p>
   </div>
-
-    <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[2]='NAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+   
   </body>
 
 </html>
