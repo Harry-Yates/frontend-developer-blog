@@ -322,6 +322,10 @@ card-wrapper {
 }
 
 .container-post img {
+  width: 500px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -758,6 +762,8 @@ Post Containers
     height: 250px;
   }
   .container-post img {
+    width: 500px;
+    height: 300px;
     position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1133,6 +1139,8 @@ Post Containers
     height: 250px;
   }
   .container-post img {
+    width: 500px;
+    height: 300px;
     position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

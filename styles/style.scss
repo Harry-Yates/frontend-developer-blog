@@ -215,6 +215,9 @@ height: 190px;
 }
 
 .container-post img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -595,6 +598,8 @@ height: 250px;
 }
 
 .container-post img {
+  width: 500px;
+  height: 300px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -941,6 +946,8 @@ height: 250px;
 }
 
 .container-post img {
+  width: 500px;
+  height: 300px;
   position: relative;
   justify-content: center;
   align-items: center;

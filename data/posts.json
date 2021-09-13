@@ -3,7 +3,7 @@
    "id": 1,
    "title": "A start with JavaScript",
    "date": "Sep 18",
-   "previewImage": "https://source.unsplash.com/random/500x300",
+   "previewImage": "./assets/images/js.png",
    "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. and more to come in the followin gpost",
    "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
    "content": [
@@ -17,7 +17,7 @@
     "id": 2,
     "title": "Header post 2",
     "date": "Sep 8",
-    "previewImage": "https://source.unsplash.com/random/500x300",
+    "previewImage": "./assets/images/js.png",
     "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
     "content": [
@@ -31,7 +31,7 @@
      "id": 3,
      "title": "Header post 3",
      "date": "Sep 8",
-     "previewImage": "https://source.unsplash.com/random/500x300",
+     "previewImage": "./assets/images/js.png",
      "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
      "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
      "content": [
@@ -45,7 +45,7 @@
       "id": 4,
       "title": "Header post 4",
       "date": "Sep 8",
-      "previewImage": "https://source.unsplash.com/random/500x300",
+      "previewImage": "./assets/images/js.png",
       "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "fullSummary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
       "content": [
