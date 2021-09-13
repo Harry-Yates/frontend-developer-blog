@@ -1,10 +1,4 @@
-/* =================
-Font Colours
-================= */
-/* =================
-Background Colours
-================= */
-@import url(/Users/harryyates/Desktop/Code/Projects/Hyper Island/frontend-developer-blog-main/frontend-developer-blog/styles/contact.css);
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,7 +388,7 @@ p {
   border: none;
   z-index: 1;
   font-size: 0.85rem;
-  padding-top: 1px;
+  padding-top: 1.4px;
   text-align: center;
 }
 
@@ -612,6 +606,7 @@ hr.solid2 {
 /* =================
 Media queries
 ================= */
+
 @media only screen and (max-width: 724px) {
   nav ul {
     list-style: none;
@@ -650,6 +645,7 @@ Media queries
     left: 74px;
     top: -50px;
   }
+  
   .profile-name {
     position: absolute;
     height: 48px;
@@ -662,6 +658,20 @@ Media queries
     top: 55px;
     font-size: 25px;
   }
+
+  .profile-name {
+    position: absolute;
+    height: 48px;
+    width: 390px;
+    font-family: Nunito;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 1.425px;
+    left: 54px;
+    top: 55px;
+    font-size: 25px;
+  }
+  
   .profile-header {
     position: absolute;
     height: 48px;
@@ -803,15 +813,15 @@ Post Containers
     left: 40px;
     background-color: #bab9be;
     color: white;
-    width: 4rem;
-    height: 1.5rem;
+    width: 3.5rem;
+    height: 1.3rem;
     border-radius: 0.4rem;
     background: #77838f;
     bottom: 40px;
     border: none;
     z-index: 1;
-    font-size: 0.85rem;
-    padding-top: 1px;
+    font-size: 0.7rem;
+    padding-top: 2px;
     text-align: center;
   }
   .pagination {
@@ -1186,18 +1196,18 @@ Post Containers
   }
   .post-date {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
     background-color: #bab9be;
     color: white;
-    width: 4rem;
-    height: 1.5rem;
+    width: 3rem;
+    height: 1.3rem;
     border-radius: 0.4rem;
     background: #77838f;
     bottom: 40px;
     border: none;
     z-index: 1;
-    font-size: 0.85rem;
+    font-size: 0.70rem;
     padding-top: 1px;
     text-align: center;
   }
