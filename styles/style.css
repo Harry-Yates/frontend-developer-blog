@@ -1291,19 +1291,21 @@ Stay in the know Section
     height: 200px;
   }
   .button {
+    display: block;
     margin-top: 40px;
-    height: 2.4rem;
-    width: 310px;
+    height: 40px;
+    width: 360px;
     background-color: #9052fd;
     color: #ffffff;
     border-radius: 3px;
     border: none;
     -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-            box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 120px;
+    padding-left: 145px;
+    cursor: pointer;
   }
   .response2 {
     position: relative;
