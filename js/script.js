@@ -21,6 +21,7 @@ function toggleState() {
       wrapper.innerHTML += `<li class="card-wrapper__card"><a href="./pages/post.html?id=${card.id}">
         <img src="${card.previewImage}" alt="A random image" />
         <div class="card-wrapper__content">
+        <div class="post-date">${card.date}</div>
          <h3>${card.title}</h3>
          <p>
           ${card.shortSummary}

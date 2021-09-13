@@ -225,6 +225,7 @@ main {
   font-size: 38px;
   line-height: 48px;
   letter-spacing: 1.425px;
+  top: 25px;
 }
 
 .profile-header {
@@ -267,7 +268,7 @@ hr.solid {
 /* =================
 Post Containers
 ================= */
-.main-post-body {
+card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,22 +282,22 @@ Post Containers
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -45px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .card-wrapper__card {
   position: relative;
   width: 560px;
-  height: 590px;
-  top: 250px;
+  height: 580px;
+  top: 210px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-  margin: 0 auto;
+  margin-right: 10px;
   border-radius: 5px;
   list-style-type: none;
+  margin-bottom: 40px;
+  margin-right: 35px;
 }
 
 .card-wrapper__card a {
@@ -317,6 +318,7 @@ Post Containers
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 190px;
 }
 
 .container-post img {
@@ -369,8 +371,9 @@ p {
   width: 6rem;
   height: 2rem;
   border-radius: 0.4rem;
-  background: #8d50f7;
+  background: #8f44fd;
   border: none;
+  cursor: pointer;
 }
 
 .container-post button:hover {
@@ -391,8 +394,8 @@ p {
   border: none;
   z-index: 1;
   font-size: 0.85rem;
-  padding-left: 9px;
   padding-top: 1px;
+  text-align: center;
 }
 
 .pagination {
@@ -406,7 +409,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: 300px;
+  top: 260px;
 }
 
 .pagination a {
@@ -487,7 +490,7 @@ input {
 .button {
   display: block;
   margin-top: 40px;
-  height: 30px;
+  height: 40px;
   width: 360px;
   background-color: #9052fd;
   color: #ffffff;
@@ -498,7 +501,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 150px;
+  padding-left: 145px;
+  cursor: pointer;
 }
 
 .response2 {
@@ -529,6 +533,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 90px;
 }
 
 /* =================
@@ -701,7 +706,10 @@ Media queries
     top: 430px;
     z-index: 1;
   }
-  .main-post-body {
+  /* =================
+Post Containers
+================= */
+  card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -715,20 +723,69 @@ Media queries
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
-  .container-post {
+  .card-wrapper__card {
     position: relative;
-    width: 420px;
-    height: 450px;
-    top: 510px;
+    width: 460px;
+    height: 570px;
+    top: 460px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-    margin: 10px;
-    font-size: 0.7em;
+    margin-right: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-right: 35px;
+  }
+  .card-wrapper__card a {
+    text-decoration: none;
+  }
+  .card-wrapper__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 250px;
+  }
+  .container-post img {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .container-post p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 0.95em;
+    text-align: center;
   }
   .container-post button {
-    margin-left: 155px;
+    position: relative;
+    right: 120px;
+    margin-top: 15px;
+    margin-left: 230px;
     background-color: #8f44fd;
     color: white;
     width: 6rem;
@@ -736,24 +793,27 @@ Media queries
     border-radius: 0.4rem;
     background: #8f44fd;
     border: none;
-    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .container-post button:hover {
+    background: #8f44fd;
   }
   .post-date {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 30px;
+    left: 40px;
     background-color: #bab9be;
     color: white;
-    width: 2.7rem;
-    height: 1rem;
+    width: 4rem;
+    height: 1.5rem;
     border-radius: 0.4rem;
     background: #77838f;
     bottom: 40px;
     border: none;
     z-index: 1;
-    font-size: 0.55rem;
-    padding-left: 9px;
-    padding-top: 0.8px;
+    font-size: 0.85rem;
+    padding-top: 1px;
+    text-align: center;
   }
   .pagination {
     display: -webkit-box;
@@ -766,7 +826,7 @@ Media queries
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    top: 550px;
+    top: 510px;
     -ms-flex-item-align: center;
         align-self: center;
     font-size: 0.8em;
@@ -1005,7 +1065,10 @@ Final Section
     top: 430px;
     z-index: 1;
   }
-  .main-post-body {
+  /* =================
+Post Containers
+================= */
+  card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1019,20 +1082,26 @@ Final Section
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
-  .container-post {
+  .card-wrapper__card {
     position: relative;
-    width: 320px;
-    height: 415px;
-    top: 492px;
+    width: 340px;
+    height: 490px;
+    top: 460px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-    margin: 10px;
-    font-size: 0.7em;
+    margin-right: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-right: 40px;
   }
-  .container-post button {
-    position: relative;
+  .card-wrapper__card a {
+    text-decoration: none;
+  }
+  .card-wrapper__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1042,8 +1111,52 @@ Final Section
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 auto;
-    margin-top: 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 250px;
+  }
+  .container-post img {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .container-post h3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .container-post p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 0.75em;
+    text-align: center;
+  }
+  .container-post button {
+    position: relative;
+    right: 120px;
+    margin-top: 15px;
+    margin-left: 230px;
     background-color: #8f44fd;
     color: white;
     width: 6rem;
@@ -1051,23 +1164,27 @@ Final Section
     border-radius: 0.4rem;
     background: #8f44fd;
     border: none;
+    cursor: pointer;
+  }
+  .container-post button:hover {
+    background: #8f44fd;
   }
   .post-date {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 30px;
+    left: 40px;
     background-color: #bab9be;
     color: white;
-    width: 2.7rem;
-    height: 1rem;
+    width: 4rem;
+    height: 1.5rem;
     border-radius: 0.4rem;
     background: #77838f;
     bottom: 40px;
     border: none;
     z-index: 1;
-    font-size: 0.55rem;
-    padding-left: 9px;
-    padding-top: 0.8px;
+    font-size: 0.85rem;
+    padding-top: 1px;
+    text-align: center;
   }
   .pagination {
     display: -webkit-box;
@@ -1080,7 +1197,7 @@ Final Section
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    top: 550px;
+    top: 510px;
     -ms-flex-item-align: center;
         align-self: center;
     font-size: 0.8em;
@@ -1168,7 +1285,7 @@ Stay in the know Section
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 150px;
+    padding-left: 147px;
   }
   .response2 {
     display: block;
