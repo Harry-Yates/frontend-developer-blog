@@ -1,3 +1,10 @@
+/* =================
+Font Colours
+================= */
+/* =================
+Background Colours
+================= */
+@import url(/Users/harryyates/Code/Projects/hyper-island/frontend-developer-blog/styles/contact.css);
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,11 +23,11 @@
   width: 165px;
   border: 4px solid #8f44fd;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 80px;
   left: 30px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .profile-name {
@@ -78,11 +85,10 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -97,8 +103,7 @@ Typography
 ================= */
 h1,
 h2,
-h3,
-a {
+h3, a {
   font-family: "Nunito", serif;
   font-weight: 300;
   color: #77838f;
@@ -142,7 +147,7 @@ nav {
   width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   z-index: 2;
 }
 
@@ -168,7 +173,6 @@ nav a {
   padding: 0.25em 0;
   position: fixed;
   top: 11px;
-  text-align: center;
 }
 
 nav a:hover,
@@ -186,7 +190,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .profile {
@@ -194,11 +198,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin: 0 auto;
   top: 150px;
@@ -211,7 +215,7 @@ main {
   border: 4px solid #8f44fd;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   left: 105px;
   bottom: 20px;
 }
@@ -269,15 +273,15 @@ card-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 
@@ -288,21 +292,12 @@ card-wrapper {
   top: 210px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   margin-right: 10px;
   border-radius: 5px;
   list-style-type: none;
   margin-bottom: 40px;
   margin-right: 35px;
-}
-
-[aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[aos="fade"].aos-animate {
-  opacity: 1;
 }
 
 .card-wrapper__card a {
@@ -314,26 +309,26 @@ card-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 190px;
 }
 
 .container-post img {
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   border-radius: 3px;
 }
@@ -345,21 +340,21 @@ p {
   display: flex;
   margin: 10px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 
 .container-post p {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 0.95em;
@@ -408,11 +403,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   top: 260px;
 }
@@ -423,8 +418,8 @@ p {
   padding: 8px 16px;
   text-decoration: none;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .pagination a.active {
@@ -446,15 +441,15 @@ Stay in the know Section
   position: relative;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #fdfaf7;
   height: 800px;
   top: 350px;
@@ -463,7 +458,7 @@ Stay in the know Section
 
 .contact-page-frame2 h1 {
   padding-bottom: 10px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.10em;
   font-size: 1.9em;
 }
 
@@ -483,7 +478,7 @@ input {
   height: 2.4rem;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   width: 360px;
   border: none;
@@ -502,7 +497,7 @@ input {
   border-radius: 3px;
   border: none;
   -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,11 +527,11 @@ input {
   display: flex;
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 90px;
 }
 
@@ -548,16 +543,16 @@ Final Section
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   top: 320px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 300px;
 }
 
@@ -595,15 +590,15 @@ hr.solid2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .legals {
@@ -638,11 +633,11 @@ Media queries
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .harry-pic {
     position: absolute;
@@ -651,7 +646,7 @@ Media queries
     border: 4px solid #8f44fd;
     border-radius: 50%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     left: 74px;
     top: -50px;
   }
@@ -718,15 +713,15 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
   }
   .card-wrapper__card {
@@ -736,7 +731,7 @@ Post Containers
     top: 460px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
     margin-right: 10px;
     border-radius: 5px;
     list-style-type: none;
@@ -751,35 +746,35 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 250px;
   }
   .container-post img {
     position: relative;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     border-radius: 3px;
   }
   .container-post p {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 0.95em;
@@ -824,15 +819,15 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     top: 510px;
     -ms-flex-item-align: center;
-    align-self: center;
+        align-self: center;
     font-size: 0.8em;
   }
   .pagination a {
@@ -841,8 +836,8 @@ Post Containers
     padding: 8px 16px;
     text-decoration: none;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .pagination a.active {
     color: white;
@@ -860,23 +855,23 @@ Stay in the know Section
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     top: 630px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: #f7fafd;
     height: 600px;
   }
   .stay-in-the-know h1 {
     padding-bottom: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.10em;
     font-size: 1.4em;
   }
   .stay-in-the-know p {
@@ -892,7 +887,7 @@ Stay in the know Section
     height: 2.4rem;
     background: #ffffff;
     -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-    box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     width: 300px;
     border: none;
@@ -963,15 +958,15 @@ Final Section
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .legals {
     position: relative;
@@ -1004,11 +999,11 @@ Final Section
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .harry-pic {
     display: -webkit-box;
@@ -1018,18 +1013,18 @@ Final Section
     border: 4px solid #8f44fd;
     border-radius: 50%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     top: -50px;
     margin: 0 auto;
   }
   .profile-name {
     position: absolute;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 48px;
     font-family: Nunito;
     font-size: 38px;
@@ -1041,11 +1036,11 @@ Final Section
   .profile-header {
     position: absolute;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 48px;
     font-family: Nunito;
     font-size: 38px;
@@ -1093,15 +1088,15 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
   }
   .card-wrapper__card {
@@ -1111,7 +1106,7 @@ Post Containers
     top: 460px;
     border-radius: 4px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
     margin-right: 10px;
     border-radius: 5px;
     list-style-type: none;
@@ -1126,35 +1121,35 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 250px;
   }
   .container-post img {
     position: relative;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     border-radius: 3px;
   }
   .container-post h3 {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 0.9em;
@@ -1162,11 +1157,11 @@ Post Containers
   }
   .container-post p {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 0.75em;
@@ -1211,15 +1206,15 @@ Post Containers
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     top: 510px;
     -ms-flex-item-align: center;
-    align-self: center;
+        align-self: center;
     font-size: 0.8em;
   }
   .pagination a {
@@ -1228,8 +1223,8 @@ Post Containers
     padding: 8px 16px;
     text-decoration: none;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .pagination a.active {
     color: white;
@@ -1249,15 +1244,15 @@ Stay in the know Section
     position: relative;
     text-align: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: #fdfaf7;
     height: 800px;
     top: 630px;
@@ -1265,7 +1260,7 @@ Stay in the know Section
   }
   .contact-page-frame2 h1 {
     padding-bottom: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.10em;
     font-size: 1.9em;
   }
   .contact-page-frame2 p {
@@ -1283,7 +1278,7 @@ Stay in the know Section
     height: 2.4rem;
     background: #ffffff;
     -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     width: 310px;
     border: none;
@@ -1305,7 +1300,7 @@ Stay in the know Section
     border-radius: 3px;
     border: none;
     -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-    box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
     padding-left: 15px;
     z-index: 1;
   }
@@ -1330,11 +1325,11 @@ Stay in the know Section
     display: flex;
     position: relative;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* =================
 Final Section
@@ -1372,15 +1367,15 @@ Final Section
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .legals {
     position: relative;
