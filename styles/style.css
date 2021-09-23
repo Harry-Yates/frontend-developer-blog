@@ -168,6 +168,7 @@ nav a {
   padding: 0.25em 0;
   position: fixed;
   top: 11px;
+  text-align: center;
 }
 
 nav a:hover,
@@ -293,6 +294,15 @@ card-wrapper {
   list-style-type: none;
   margin-bottom: 40px;
   margin-right: 35px;
+}
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
 }
 
 .card-wrapper__card a {

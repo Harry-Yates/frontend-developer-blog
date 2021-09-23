@@ -1,7 +1,7 @@
 [
  {
    "id": 1,
-   "title": "A post about with JavaScript",
+   "title": "A post about JavaScript",
    "date": "Sep 15",
    "author": "Harry Yates",
    "previewImage": "https://source.unsplash.com/random/500x300",
@@ -20,7 +20,7 @@
  },
   {
     "id": 2,
-    "title": "Header post 2",
+    "title": "A post about CSS",
     "date": "Sep 8",
     "previewImage": "https://source.unsplash.com/random/500x300",
     "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -34,7 +34,7 @@
   },
    {
      "id": 3,
-     "title": "Header post 3",
+     "title": "A post about React",
      "date": "Sep 8",
      "previewImage": "https://source.unsplash.com/random/500x300",
      "shortSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

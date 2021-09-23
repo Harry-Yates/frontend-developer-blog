@@ -19,6 +19,28 @@ main {
   z-index: 1;
 }
 
+#search {
+  display: flex;
+}
+
+#search label {
+  display: flex;
+  position: relative;
+  left: 395px;
+  top: 25px;
+}
+
+#searchInput:focus {
+  outline-width: 0;
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
+#searchInput:hover {
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
 .main-post-body {
   display: flex;
   position: relative;
