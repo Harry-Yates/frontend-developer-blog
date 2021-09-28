@@ -169,7 +169,6 @@ Profile
 
 .card {
   max-width: 800px;
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,6 +252,7 @@ Profile
   margin-bottom: 0.5rem;
   display: inline-block;
   border-radius: 5px;
+  font-family: Nunito;
 }
 
 .repo:hover {
@@ -591,9 +591,16 @@ Final Section
 }
 
 .finalsection p {
-  width: 300px;
-  left: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 14px;
+  max-width: 250px;
 }
 
 .finalsection .closing-address {
@@ -639,6 +646,7 @@ hr.solid2 {
   position: relative;
   text-align: center;
   margin: 0, auto;
+  margin-bottom: 100px;
   top: 50px;
   font-size: 10px;
 }

@@ -148,12 +148,26 @@ function createPreviewCard(card) {
        </li>`;
 }
 
+function formatPost(post) {
+  let formated = {
+    id: post.id,
+    title: post.title.rendered,
+    date: post.date.rendered,
+    previewImage: post._embedded["wp:featuredmedia"][0].source_url,
+    shortSumamry: post.excerpt.rendered,
+    content: post.content.rendered,
+  };
+
+  return formated;
+}
+
 function getPosts() {
-  fetch("../data/posts.json")
+  fetch("http://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
-        createPreviewCard(data[i]);
+        let formatedPosts = formatPost(data[i]);
+        createPreviewCard(formatedPosts);
       }
     });
 }

@@ -152,7 +152,6 @@ Profile
 
 .card {
   max-width: 800px;
-  border-radius: 20px;
   display: flex;
   padding: 0.1rem;
   margin: 0 1.5rem;
@@ -222,6 +221,7 @@ Profile
   margin-bottom: 0.5rem;
   display: inline-block;
   border-radius: 5px;
+  font-family: Nunito;
 }
 
 .repo:hover {
@@ -554,9 +554,11 @@ Final Section
 }
 
 .finalsection p {
-  width: 300px;
-  left: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
   font-size: 14px;
+  max-width: 250px;
 }
 
 .finalsection .closing-address {
@@ -602,6 +604,7 @@ hr.solid2 {
   position: relative;
   text-align: center;
   margin: 0, auto;
+  margin-bottom: 100px;
   top: 50px;
   font-size: 10px;
 }
