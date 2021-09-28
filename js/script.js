@@ -1,3 +1,116 @@
+const APIURL = "https://api.github.com/users/";
+
+const main = document.getElementById("main");
+const form = document.getElementById("form");
+const search = document.getElementById("search");
+
+getUser("harry-yates");
+
+document.getElementById("searchInput").addEventListener("keyup", function (event) {
+  let searchQuery = event.target.value.toLowerCase();
+  let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
+
+  for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
+    const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
+
+    if (currentName.includes(searchQuery)) {
+      allNamesDOMCollection[counter].style.display = "block";
+    } else {
+      allNamesDOMCollection[counter].style.display = "none";
+    }
+  }
+});
+
+async function getUser(username) {
+  try {
+    const { data } = await axios(APIURL + username);
+
+    createUserCard(data);
+    getRepos(username);
+  } catch (err) {
+    if (err.response.status == 404) {
+      createErrorCard("No profile with this username");
+    }
+  }
+}
+
+async function getRepos(username) {
+  try {
+    const { data } = await axios(APIURL + username + "/repos?sort=created");
+
+    addReposToCard(data);
+  } catch (err) {
+    createErrorCard("Problem fetching repos");
+  }
+}
+
+function createUserCard(user) {
+  const userID = user.name || user.login;
+  const userBio = user.bio ? `<p>${user.bio}</p>` : "";
+  const cardHTML = `
+    <div class="card">
+    <div>
+      <img src="${user.avatar_url}" alt="${user.name}" class="avatar gradient-border">
+    </div>
+    <div class="user-info">
+      <h2>${userID}</h2>
+      <h2>Front End Developer Blog</h2>
+      <p>I post about CSS, JS, React and answer interview questions. Feel free to reach out and connect via the links below! 🤓<p>
+	  
+      <ul>
+        <li>${user.followers} <strong>Followers</strong></li>
+        <li>${user.following} <strong>Following</strong></li>
+        <li>${user.public_repos} <strong>Repos</strong></li>
+      </ul>
+      <div id="repos"></div>
+       <div class="social-media-icons">
+            <a href="https://github.com/Harry-Yates"><i style="padding-left:10px;" class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harryjtyates/"><i style="padding-left:10px;" class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/HA9RY"><i style="padding-left:10px;" class="fab fa-twitter" ></i></a>
+            <a href="mailto:hyates1@gmail.com"><i style="padding-left:10px;" class="fas fa-envelope-square"></i></a>
+          </div>
+    </div>
+  </div>
+    `;
+  main.innerHTML = cardHTML;
+}
+
+function createErrorCard(msg) {
+  const cardHTML = `
+        <div class="card">
+            <h1>${msg}</h1>
+        </div>
+    `;
+
+  main.innerHTML = cardHTML;
+}
+
+function addReposToCard(repos) {
+  const reposEl = document.getElementById("repos");
+
+  repos.slice(0, 5).forEach((repo) => {
+    const repoEl = document.createElement("a");
+    repoEl.classList.add("repo");
+    repoEl.href = repo.html_url;
+    repoEl.target = "_blank";
+    repoEl.innerText = repo.name;
+
+    reposEl.appendChild(repoEl);
+  });
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const user = search.value;
+
+  if (user) {
+    getUser(user);
+
+    search.value = "";
+  }
+});
+
 function toggleState() {
   document.querySelector(".toggle-me").classList.toggle("active");
 }
@@ -87,18 +200,3 @@ function getDrink() {
       populatePost(post);
     });
 }
-
-document.getElementById("searchInput").addEventListener("keyup", function (event) {
-  let searchQuery = event.target.value.toLowerCase();
-  let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
-
-  for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
-    const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
-
-    if (currentName.includes(searchQuery)) {
-      allNamesDOMCollection[counter].style.display = "block";
-    } else {
-      allNamesDOMCollection[counter].style.display = "none";
-    }
-  }
-});
