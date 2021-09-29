@@ -1,11 +1,9 @@
 const APIURL = "https://api.github.com/users/";
-
 const main = document.getElementById("main");
-const form = document.getElementById("form");
-const search = document.getElementById("search");
+
+// Git Hub Profile Set-Up
 
 getUser("harry-yates");
-
 document.getElementById("searchInput").addEventListener("keyup", function (event) {
   let searchQuery = event.target.value.toLowerCase();
   let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
@@ -99,17 +97,7 @@ function addReposToCard(repos) {
   });
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const user = search.value;
-
-  if (user) {
-    getUser(user);
-
-    search.value = "";
-  }
-});
+//Posts and cards
 
 function toggleState() {
   document.querySelector(".toggle-me").classList.toggle("active");
@@ -139,9 +127,7 @@ function createPreviewCard(card) {
         <div class="card-wrapper__content" >
         <div class="post-date">${card.date}</div>
          <h3>${card.title}</h3>
-         <p>
-          ${card.shortSummary}
-         </p>
+         <p>${card.shortSummary}</p>
          <button href="../pages/post.html">Read More</button>
         </div>
         </a>
@@ -154,7 +140,7 @@ function formatPost(post) {
     title: post.title.rendered,
     date: post.date.rendered,
     previewImage: post._embedded["wp:featuredmedia"][0].source_url,
-    shortSumamry: post.excerpt.rendered,
+    shortSummary: post.excerpt.rendered,
     content: post.content.rendered,
   };
 
@@ -175,7 +161,7 @@ function getPosts() {
 function getPostFromId() {
   var id = JSON.parse(findQuery("id"));
 
-  fetch("../data/posts.json")
+  fetch("http://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {

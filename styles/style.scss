@@ -269,10 +269,17 @@ Post Containers
   padding-right: 40px;
 }
 
+.container-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .card-wrapper__card {
   position: relative;
   width: 560px;
-  height: 580px;
+  height: 610px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -314,7 +321,8 @@ Post Containers
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 190px;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 .container-post img {
