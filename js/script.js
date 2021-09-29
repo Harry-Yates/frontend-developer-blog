@@ -104,15 +104,14 @@ function toggleState() {
 }
 
 function populatePost(post) {
-  document.getElementById("postTitle").innerHTML = post.title;
+  document.getElementById("postTitle").innerHTML = post.title.rendered;
   document.getElementById("postDate").innerHTML = post.date;
   document.getElementById("postAuthor").innerHTML = post.author;
 
   var content = post.content;
+  console.log(post.content);
 
-  for (let i = 0; i < content.length; i++) {
-    document.getElementById("postContent").innerHTML += content[i];
-  }
+  document.getElementById("postContent").innerHTML = content.rendered;
 }
 
 function findQuery(param) {
@@ -138,7 +137,7 @@ function formatPost(post) {
   let formated = {
     id: post.id,
     title: post.title.rendered,
-    date: post.date.rendered,
+    date: formatDate(post.date),
     previewImage: post._embedded["wp:featuredmedia"][0].source_url,
     shortSummary: post.excerpt.rendered,
     content: post.content.rendered,
@@ -147,8 +146,15 @@ function formatPost(post) {
   return formated;
 }
 
+function formatDate(date) {
+  var d = new Date(date);
+
+  const monthNames = ["Jan", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return d.getDate() + "pppp" + monthNames[d.getMonth()];
+}
+
 function getPosts() {
-  fetch("http://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
+  fetch("https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -161,7 +167,7 @@ function getPosts() {
 function getPostFromId() {
   var id = JSON.parse(findQuery("id"));
 
-  fetch("http://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
+  fetch("https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
