@@ -54,7 +54,6 @@ function createUserCard(user) {
       <h2>${userID}</h2>
       <h2>Front End Developer Blog</h2>
       <p>I post about CSS, JS, React and answer interview questions. Feel free to reach out and connect via the links below! 🤓<p>
-	  
       <ul>
         <li>${user.followers} <strong>Followers</strong></li>
         <li>${user.following} <strong>Following</strong></li>
@@ -149,8 +148,8 @@ function formatPost(post) {
 function formatDate(date) {
   var d = new Date(date);
 
-  const monthNames = ["Jan", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  return d.getDate() + "pppp" + monthNames[d.getMonth()];
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return d.getDate() + " " + monthNames[d.getMonth()];
 }
 
 function getPosts() {
@@ -178,31 +177,31 @@ function getPostFromId() {
     });
 }
 
-function getDrink() {
-  fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-    .then((response) => response.json())
-    .then((data) => {
-      var drink = data.drinks[0];
-      var maxNumberOfIngredient = 15;
-      var post = {
-        title: drink.strDrink,
-        content: ["<img src=" + drink.strDrinkThumb + " />", "<p>" + drink.strInstructions + "</p>", "<h3>Ingredients</h3>"],
-      };
+// function getDrink() {
+//   fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       var drink = data.drinks[0];
+//       var maxNumberOfIngredient = 15;
+//       var post = {
+//         title: drink.strDrink,
+//         content: ["<img src=" + drink.strDrinkThumb + " />", "<p>" + drink.strInstructions + "</p>", "<h3>Ingredients</h3>"],
+//       };
 
-      for (let i = 0; i < maxNumberOfIngredient; i++) {
-        if (i === 0) {
-          post.content.push("<ul>");
-        }
+//       for (let i = 0; i < maxNumberOfIngredient; i++) {
+//         if (i === 0) {
+//           post.content.push("<ul>");
+//         }
 
-        if (drink[`strIngredient${i}`]) {
-          post.content.push("<li>" + drink[`strIngredient${i}`] + " : " + drink[`strMeasure${i}`] + "</li>");
-        }
-        if (i === maxNumberOfIngredient - 1) {
-          post.content.push("</ul>");
-        }
-      }
+//         if (drink[`strIngredient${i}`]) {
+//           post.content.push("<li>" + drink[`strIngredient${i}`] + " : " + drink[`strMeasure${i}`] + "</li>");
+//         }
+//         if (i === maxNumberOfIngredient - 1) {
+//           post.content.push("</ul>");
+//         }
+//       }
 
-      document.getElementById("postContent").innerHTML = "";
-      populatePost(post);
-    });
-}
+//       document.getElementById("postContent").innerHTML = "";
+//       populatePost(post);
+//     });
+// }

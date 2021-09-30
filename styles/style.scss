@@ -131,10 +131,11 @@ main {
 hr.solid {
   position: relative;
   border-top: 1px solid rgba(140, 139, 139, 0.3);
-  width: 500px;
-  top: 20px;
+  width: 35%;
+  top: 15px;
   margin: 0, auto;
   height: 1px;
+  right: 1px;
 }
 
 /* =================
@@ -279,7 +280,7 @@ Post Containers
 .card-wrapper__card {
   position: relative;
   width: 560px;
-  height: 610px;
+  height: 560px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -321,7 +322,7 @@ Post Containers
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 200px;
+  height: 40%;
   margin-bottom: 10px;
 }
 
@@ -334,42 +335,25 @@ Post Containers
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  height: 50%;
   border-radius: 3px;
 }
 
 .container-post h3,
 p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-decoration: none;
 }
 
 .container-post p {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  position: relative;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   text-align: center;
 }
 
 .container-post button {
   position: relative;
-  right: 120px;
-  margin-top: 15px;
-  margin-left: 230px;
   background-color: #8f44fd;
   color: white;
   width: 6rem;
@@ -398,8 +382,9 @@ p {
   border: none;
   z-index: 1;
   font-size: 0.85rem;
-  padding-top: 1px;
+  padding-top: 3px;
   text-align: center;
+  font-family: 900;
 }
 
 .pagination {
@@ -415,6 +400,7 @@ p {
   position: relative;
   top: 20px;
   margin-bottom: 20px;
+  right: 5px;
 }
 
 .pagination a {
@@ -482,7 +468,6 @@ input {
   font-size: 0.9rem;
   height: 2.4rem;
   background: #ffffff;
-  -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   width: 360px;
@@ -492,21 +477,41 @@ input {
   margin-top: 20px;
 }
 
-.button2 {
-  display: block;
-  margin-top: 40px;
+input:focus {
+  outline-width: 0;
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
+input:hover {
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
+#mc_embed_signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mc-embedded-subscribe {
+  margin: 30px auto;
   height: 40px;
-  width: 360px;
-  background-color: #9052fd;
+  width: 120px;
+  background-color: #8f44fd;
   color: #ffffff;
   border-radius: 3px;
   border: none;
-  -webkit-box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 150px;
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.06);
+  padding-right: 15px;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: #6b3cbb;
+}
+
+#mc_embed_signup_scroll2 {
+  width: 100%;
 }
 
 .response2 {
@@ -516,7 +521,7 @@ input {
   color: #9052fd;
   font-weight: 900;
   margin-top: 20px;
-  width: 375px;
+  width: 100%;
   height: 380px;
   margin: 10px, auto;
   text-align: center;
@@ -575,9 +580,8 @@ Final Section
 }
 
 .closing-address h3 {
-  padding-left: 72px;
   padding-top: 75px;
-  margin: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 5px;
   font-weight: bold;
