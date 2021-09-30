@@ -511,6 +511,10 @@ input:hover {
 }
 
 #mc_embed_signup_scroll2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
