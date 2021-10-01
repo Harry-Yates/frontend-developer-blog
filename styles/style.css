@@ -209,6 +209,7 @@ Profile
   color: #828d99;
   font-size: 19px;
   margin-bottom: 0;
+  max-width: 550px;
 }
 
 .user-info ul {
@@ -365,8 +366,8 @@ Post Containers
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 40%;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .container-post img {
