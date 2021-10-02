@@ -1,3 +1,7 @@
+body {
+  font-family: "Nunito", serif;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -51,6 +55,125 @@ p {
 
 img {
   width: 100%;
-  padding: 0 90px;
+  height: 100%;
   object-fit: cover;
+}
+
+figure {
+  position: relative;
+  padding: 0 15px 0 0;
+}
+
+#postComments {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 70, 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  padding: 30px;
+  border-radius: 20px;
+  top: 60px;
+  color: #9052fd;
+  font-weight: 600;
+}
+
+#postCommentsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  background-color: #fff;
+  margin-left: 0px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: #9052fd 2px solid;
+}
+
+#subject {
+  max-width: 60rem;
+  width: 60vw;
+  border: #9052fd 2px solid;
+  font-size: 0.9rem;
+  font-family: "Nunito", serif;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#subject:focus {
+  outline-width: 0;
+  border: #9052fd 2px solid;
+}
+
+.avatar2 {
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #8f44fd;
+}
+
+.detailz {
+  display: flex;
+  display: space-between;
+}
+
+.cardP {
+  margin-left: 120px;
+}
+
+.details {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.cardContainer {
+  display: block;
+  position: relative;
+  font-size: 0.9rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+  font-family: "Nunito", serif;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  position: relative;
+  font-size: 0.9rem;
+  height: 2.4rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  width: 8rem;
+  border: none;
+  padding-right: 25px;
+  color: #fff;
+  background-color: #9052fd;
+  margin-top: 20px;
+  font-family: "Nunito", serif;
+  cursor: pointer;
+}
+
+input:focus {
+  outline-width: 0;
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
+input:hover {
+  border: #9052fd 2.5px solid;
+  cursor: text;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

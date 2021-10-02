@@ -37,8 +37,20 @@
         <div id="post-details"></div>
           <div id="postDate"></div>
           <div id="postAuthor"></div>
-        </div>
         <div id="postContent"></div>
+
+        <div id="postCommentsForm">
+          <h1>Leave a Reply ⩤</h1>
+          <form action="https://harry.josefcarlsson.com/wp-json/wp/v2/comments" method="post">
+            <input type="text" value="" name="FIRSTNAME" class="name" placeholder="Enter first name..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write a comment.."></textarea>
+          <input type="submit" value="Submit">
+        </form>
+
+        </div>
+
+        <div id="postComments"></div>
        </main>
 
   <script src="../js/script.js"></script>

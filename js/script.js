@@ -4,20 +4,21 @@ const main = document.getElementById("main");
 // Git Hub Profile Set-Up
 
 getUser("harry-yates");
-document.getElementById("searchInput").addEventListener("keyup", function (event) {
-  let searchQuery = event.target.value.toLowerCase();
-  let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
 
-  for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
-    const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
+// document.getElementById("searchInput").addEventListener("keyup", function (event) {
+//   let searchQuery = event.target.value.toLowerCase();
+//   let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
 
-    if (currentName.includes(searchQuery)) {
-      allNamesDOMCollection[counter].style.display = "block";
-    } else {
-      allNamesDOMCollection[counter].style.display = "none";
-    }
-  }
-});
+//   for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
+//     const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
+
+//     if (currentName.includes(searchQuery)) {
+//       allNamesDOMCollection[counter].style.display = "block";
+//     } else {
+//       allNamesDOMCollection[counter].style.display = "none";
+//     }
+//   }
+// });
 
 async function getUser(username) {
   try {
@@ -26,7 +27,7 @@ async function getUser(username) {
     createUserCard(data);
     getRepos(username);
   } catch (err) {
-    if (err.response.status == 404) {
+    if (err.response.status === 404) {
       createErrorCard("No profile with this username");
     }
   }
@@ -172,9 +173,59 @@ function getPostFromId() {
       for (let i = 0; i < data.length; i++) {
         if (data[i].id === id) {
           populatePost(data[i]);
+          console.log(data[i]);
         }
       }
     });
+}
+
+function postComment() {
+  var id = JSON.parse(findQuery("id"));
+  console.log(JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "hello" }));
+  fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "juuu" }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    });
+}
+
+function getComment() {
+  var id = JSON.parse(findQuery("id"));
+  console.log(JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "hello" }));
+  fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments?post=${id}`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("test data", data);
+      for (let i = 0; i < data.length; i++) {
+        postCommentCard(data[i]);
+      }
+    });
+}
+
+getComment();
+
+function postCommentCard(card) {
+  console.log(card);
+  var wrapper = document.getElementById("postComments");
+  wrapper.innerHTML += `
+  <div class="cardContainer">
+  <div class="detailz">
+  <div class="img">
+  <img src="/assets/images/avatar.png" alt="avatarimage" class="avatar2">
+  </div>
+  <div class="details">
+  <div class="cardAuthor">${card.author_name}</div>
+  <div class="cardDate">${formatDate(card.date)}</div>
+  </div>
+  </div>
+  <div class="cardP">${card.content.rendered}</div>
+  </div>`;
 }
 
 // function getDrink() {
