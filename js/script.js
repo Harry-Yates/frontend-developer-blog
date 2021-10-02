@@ -5,21 +5,6 @@ const main = document.getElementById("main");
 
 getUser("harry-yates");
 
-// document.getElementById("searchInput").addEventListener("keyup", function (event) {
-//   let searchQuery = event.target.value.toLowerCase();
-//   let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
-
-//   for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
-//     const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
-
-//     if (currentName.includes(searchQuery)) {
-//       allNamesDOMCollection[counter].style.display = "block";
-//     } else {
-//       allNamesDOMCollection[counter].style.display = "none";
-//     }
-//   }
-// });
-
 async function getUser(username) {
   try {
     const { data } = await axios(APIURL + username);
