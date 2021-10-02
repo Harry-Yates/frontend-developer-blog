@@ -86,14 +86,21 @@ figure {
 
 .name {
   background-color: #fff;
+  color: #757575;
   margin-left: 0px;
   width: 100%;
   border-radius: 5px;
   padding: 15px;
   border: #9052fd 2px solid;
+  margin-bottom: 20px;
+}
+
+.name:hover {
+  border: #9052fd 2px solid;
 }
 
 #subject {
+  background-color: #fff;
   max-width: 60rem;
   width: 60vw;
   border: #9052fd 2px solid;
@@ -101,6 +108,10 @@ figure {
   font-family: "Nunito", serif;
   border-radius: 5px;
   padding: 15px;
+}
+
+textarea {
+  background-color: #fff;
 }
 
 #subject:focus {

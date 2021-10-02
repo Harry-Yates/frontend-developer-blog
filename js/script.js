@@ -4,7 +4,6 @@ const main = document.getElementById("main");
 // Git Hub Profile Set-Up
 
 getUser("harry-yates");
-
 async function getUser(username) {
   try {
     const { data } = await axios(APIURL + username);
@@ -166,13 +165,12 @@ function getPostFromId() {
 
 function postComment() {
   var id = JSON.parse(findQuery("id"));
-  console.log(JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "hello" }));
   fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "juuu" }),
+    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "test post" }),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -182,7 +180,6 @@ function postComment() {
 
 function getComment() {
   var id = JSON.parse(findQuery("id"));
-  console.log(JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "hello" }));
   fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments?post=${id}`)
     .then((response) => response.json())
     .then((data) => {
