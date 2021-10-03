@@ -24,6 +24,13 @@ main {
   position: relative;
 }
 
+@media (max-width: 375px) {
+  #container-search {
+    margin-right: 40px;
+    zoom: 0.75;
+  }
+}
+
 #search label {
   display: flex;
   position: relative;
@@ -66,4 +73,11 @@ main {
 .card-wrapper__card {
   margin: 20px;
   zoom: 0.5;
+}
+
+@media (max-width: 375px) {
+  .card-wrapper__card {
+    margin-right: 40px;
+    zoom: 0.6;
+  }
 }

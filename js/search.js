@@ -1,14 +1,17 @@
-document.getElementById("searchInput").addEventListener("keyup", function (event) {
-  let searchQuery = event.target.value.toLowerCase();
-  let allNamesDOMCollection = document.getElementsByClassName("card-wrapper__card");
+function searchPosts() {
+  document.getElementById("searchInput").addEventListener("keyup", function (event) {
+    let searchQuery = event.target.value.toLowerCase();
+    let allPostsDOMCollection = document.getElementsByClassName("card-wrapper__card");
 
-  for (let counter = 0; counter < allNamesDOMCollection.length; counter++) {
-    const currentName = allNamesDOMCollection[counter].textContent.toLowerCase();
+    for (let i = 0; i < allPostsDOMCollection.length; i++) {
+      const currentName = allPostsDOMCollection[i].textContent.toLowerCase();
 
-    if (currentName.includes(searchQuery)) {
-      allNamesDOMCollection[counter].style.display = "block";
-    } else {
-      allNamesDOMCollection[counter].style.display = "none";
+      if (currentName.includes(searchQuery)) {
+        allPostsDOMCollection[i].style.display = "block";
+      } else {
+        allPostsDOMCollection[i].style.display = "none";
+      }
     }
-  }
-});
+  });
+}
+searchPosts();

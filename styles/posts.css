@@ -24,6 +24,28 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  h2 {
+    margin-bottom: 70px;
+    zoom: 0.75;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    zoom: 0.5;
+    padding-top: 60px;
+  }
+
+  h2 {
+    zoom: 0.6;
+  }
+
+  p {
+    zoom: 0.8;
+  }
+}
+
 #postContent {
   position: relative;
   width: 80%;
@@ -77,6 +99,12 @@ figure {
   font-weight: 600;
 }
 
+@media (max-width: 375px) {
+  #postComments {
+    zoom: 0.6;
+  }
+}
+
 #postCommentsForm {
   display: flex;
   flex-direction: column;
@@ -93,9 +121,26 @@ figure {
   padding: 15px;
   border: #9052fd 2px solid;
   margin-bottom: 20px;
+  box-shadow: none;
 }
 
 .name:hover {
+  border: #9052fd 2px solid;
+}
+
+.email {
+  background-color: #fff;
+  color: #757575;
+  margin-left: 0px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: #9052fd 2px solid;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+.email:hover {
   border: #9052fd 2px solid;
 }
 

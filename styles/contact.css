@@ -25,6 +25,7 @@ Contact Page
   padding-left: 20px;
   padding-right: 20px;
   width: 70%;
+  max-width: 600px;
 }
 
 input {
@@ -57,6 +58,12 @@ input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 375px) {
+  #mc_embed_signup {
+    zoom: 0.7;
+  }
 }
 
 #mc-embedded-subscribe {
@@ -94,7 +101,7 @@ input:hover {
   height: 410px;
   margin: 10px, auto;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
   background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
   background-repeat: no-repeat;
   background-position: center;

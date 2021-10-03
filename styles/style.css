@@ -304,11 +304,7 @@ Profile
 /* =================
 Post Containers
 ================= */
-.main-post-body {
-  padding-right: 40px;
-}
-
-.container-post {
+.card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +314,19 @@ Post Containers
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
+  padding-right: 40px;
+}
+
+@media (max-width: 375px) {
+  .card-wrapper {
+    margin-left: 5px;
+    zoom: 0.85;
+  }
 }
 
 .card-wrapper__card {
@@ -444,7 +452,13 @@ p {
   position: relative;
   top: 20px;
   margin-bottom: 20px;
-  right: 5px;
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    margin: 20px;
+    zoom: 0.85;
+  }
 }
 
 .pagination a {
@@ -545,6 +559,12 @@ input:hover {
           align-items: center;
 }
 
+@media (max-width: 375px) {
+  #mc_embed_signup2 {
+    zoom: 0.8;
+  }
+}
+
 #mc-embedded-subscribe {
   margin: 30px auto;
   height: 40px;
@@ -590,7 +610,7 @@ input:hover {
   height: 380px;
   margin: 10px, auto;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.6em;
   background-image: url(https://media.giphy.com/media/3otPoOxyDTXjzpMbIY/giphy.gif?cid=ecf05e474es8dd8oqq4p77ynans9ku60v1mp97dbpwd3htsm&rid=giphy.gif&ct=g);
   background-repeat: no-repeat;
   background-position: center;
@@ -629,6 +649,12 @@ Final Section
   -ms-flex-direction: row;
   flex-direction: row;
   height: 300px;
+}
+
+@media (max-width: 375px) {
+  .finalsection {
+    zoom: 0.7;
+  }
 }
 
 .finalsection p {

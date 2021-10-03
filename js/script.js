@@ -1,7 +1,7 @@
 const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("main");
 
-// Git Hub User Profile
+// Git Hub User and Profile Functions
 
 getUser("harry-yates");
 async function getUser(username) {
@@ -81,7 +81,7 @@ function createUserCard(user) {
   main.innerHTML = cardHTML;
 }
 
-//Posts and cards
+//Post Functions
 
 function toggleState() {
   document.querySelector(".toggle-me").classList.toggle("active");
@@ -163,6 +163,8 @@ function getPostFromId() {
     });
 }
 
+// Wordpress Comment Functions
+
 function postComment() {
   var id = JSON.parse(findQuery("id"));
   fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
@@ -170,13 +172,14 @@ function postComment() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "test post" }),
+    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "test p" }),
   })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
     });
 }
+postComment();
 
 function getComment() {
   var id = JSON.parse(findQuery("id"));

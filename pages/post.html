@@ -42,15 +42,15 @@
         <div id="postCommentsForm">
           <h1>Leave a Reply ⩤</h1>
           <form action="https://harry.josefcarlsson.com/wp-json/wp/v2/comments" method="post">
-          <input type="text" name="FIRSTNAME" class="name" placeholder="Enter first name..">
-          <textarea id="subject" name="subject" placeholder="Write a comment.."></textarea>
+          <input type="hidden" id="postId" value={POST_ID} />
+          <input type="text" class="name" placeholder="Enter first name.." required>
+          <input type="email" name="email" class="email" placeholder="Enter email.." required>
+          <textarea id="subject" name="subject" placeholder="Write a comment.." required></textarea>
           <input type="submit" value="Submit" id="">
         </form>
-
         </div>
 
         <div id="postComments"></div>
-        
        </main>
 
   <script src="../js/script.js"></script>
