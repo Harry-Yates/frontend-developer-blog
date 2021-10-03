@@ -24,29 +24,40 @@ At this stage, I wanted to leave my portfolio for later down the line once I'd t
 
 Although this was a personal project, we picked a team of 10 as a support network. I built in time for others to help/learn from roadblocks on their projects too.
 
-### :heavy_check_mark: Solution:
+### :mechanical_arm: Solution:
 
-I planned to start simple and add on complexity as I went. I found Figma a fantastic tool and enjoyed using it. I love that you can use the mobile buddy app to navigate through a mocked-up app design. Figma helped me design out the blog in full and remain organised. I'm excited by the teamwork capabilities of the tool for future projects.
+I planned to start simple and add on complexity as I progressed. I found Figma a fantastic tool and enjoyed using it. I love that you can use the mobile buddy app to navigate through a mocked-up app design. Figma helped me design out the blog in full and remain organised. I'm excited by the teamwork capabilities of the tool for future projects.
 
-With a solid design foundation, building out the minimalist design was straightforward. I integrated a JSON file to fetch posts, add search functionality through JS and connect the site to Mailchimp.
+With a solid design foundation, building out the minimalist design was straightforward. I integrated a JSON file to fetch posts, added search functionality through JS and connected a Contact Me function via Mailchimp.
 
-I used Axios to integrate Github profile data to my homepage and display my latest repos. With help from our lecturer (and using his server), I was able to integrate WordPress posts with comments.
+I used Axios and the GitHub API to link endpoints to my Github (name/userID/avatar_url/followers/following/public_repos) and publish it within the profile section of the index page.
+
+With help from our lecturer (and using his server), I was able to integrate WordPress REST API and used undpoints for post pages and comments.
 
 ### :man_student: Learnings:
 
-- The importacne of Stack overflow
+- The importance of Stack overflow
 - The power of API's
-- Discussing issues as a group was incredibly helpfull
-- Feel more confident in Figma, CSS and JS.
+- Animations are a lot of fun really enjoyed using teh AOS library
+- Discussing issues as a group and working together on solutions was very helpfull
+- Feel more confident in Figma, responsive design, CSS and JS
 
 ### :computer: Tech used in this specific repository:
 
 - Figma
 - HTML
 - CSS
+- [AOS - Animate on scroll library](https://github.com/michalsnik/aos)
 - JavaScript
 - JSON
-- WordPress (Fetch API)
+- MAMP
+- [WordPress REST API](https://developer.wordpress.org/rest-api/#using-the-wordpress-rest-api)
+- [GitHub API](https://docs.github.com/en/rest/overview)
 - [Axios](https://axios-http.com/docs/api_intro)
+- Mailchimp
 
-### :computer: Evaluation: -->
+### :thought_balloon: Evaluation:
+
+I found working with API's very interesting, and there are a few loose ends I still need to tie up, such as post page pagination. I need to improve my understanding of the WordPress API and its capabilities.
+
+I need to spend more time with JS, so I will double down efforts here for my next module.

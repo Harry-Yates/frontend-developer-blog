@@ -1,7 +1,7 @@
 const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("main");
 
-// Git Hub Profile Set-Up
+// Git Hub User Profile
 
 getUser("harry-yates");
 async function getUser(username) {
@@ -23,8 +23,32 @@ async function getRepos(username) {
 
     addReposToCard(data);
   } catch (err) {
-    createErrorCard("Problem fetching repos");
+    createErrorCard("Problem fetching my repo");
   }
+}
+
+function createErrorCard(msg) {
+  const cardHTML = `
+        <div class="card">
+            <h1>${msg}</h1>
+        </div>
+    `;
+
+  main.innerHTML = cardHTML;
+}
+
+function addReposToCard(repos) {
+  const reposEl = document.getElementById("repos");
+
+  repos.slice(0, 4).forEach((repo) => {
+    const repoEl = document.createElement("a");
+    repoEl.classList.add("repo");
+    repoEl.href = repo.html_url;
+    repoEl.target = "_blank";
+    repoEl.innerText = repo.name;
+
+    reposEl.appendChild(repoEl);
+  });
 }
 
 function createUserCard(user) {
@@ -55,30 +79,6 @@ function createUserCard(user) {
   </div>
     `;
   main.innerHTML = cardHTML;
-}
-
-function createErrorCard(msg) {
-  const cardHTML = `
-        <div class="card">
-            <h1>${msg}</h1>
-        </div>
-    `;
-
-  main.innerHTML = cardHTML;
-}
-
-function addReposToCard(repos) {
-  const reposEl = document.getElementById("repos");
-
-  repos.slice(0, 4).forEach((repo) => {
-    const repoEl = document.createElement("a");
-    repoEl.classList.add("repo");
-    repoEl.href = repo.html_url;
-    repoEl.target = "_blank";
-    repoEl.innerText = repo.name;
-
-    reposEl.appendChild(repoEl);
-  });
 }
 
 //Posts and cards
