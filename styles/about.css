@@ -80,4 +80,7 @@ main {
     margin-right: 40px;
     zoom: 0.6;
   }
+  .post-date {
+    zoom: 0.9;
+  }
 }
