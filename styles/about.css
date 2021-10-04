@@ -84,4 +84,8 @@ main {
     padding-top: 5px;
     font-size: 1.45rem;
   }
+
+  #searchInput {
+    border: 1px solid #9052fd;
+  }
 }
