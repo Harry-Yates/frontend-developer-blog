@@ -164,7 +164,8 @@ textarea {
 }
 
 .avatar2 {
-  height: 4rem;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   border: 2px solid #8f44fd;
 }
