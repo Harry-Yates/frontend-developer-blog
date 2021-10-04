@@ -32,15 +32,15 @@ With a solid design foundation, building out the minimalist design was straightf
 
 I used Axios and the GitHub API to link endpoints to my Github (name/userID/avatar_url/followers/following/public_repos) and publish it within the profile section of the index page.
 
-With help from our lecturer (and using his server), I was able to integrate WordPress REST API and used undpoints for post pages and comments.
+With help from our lecturer (and use of his server), I was able to integrate the WordPress REST API and use undpoints for post pages and comments.
 
 ### :man_student: Learnings:
 
-- The importance of Stack overflow
+- Just how usefull Stack overflow is!
 - The power of API's
-- Animations are a lot of fun really enjoyed using teh AOS library
-- Discussing issues as a group and working together on solutions was very helpfull
-- Feel more confident in Figma, responsive design, CSS and JS
+- Animations are a lot of fun really enjoyed using the AOS library to inject character.
+- Discussing issues as a group and working through issues and their solutions worked well.
+- Feel more confident in Figma, responsive design, CSS and JS.
 
 ### :computer: Tech used in this specific repository:
 

@@ -429,7 +429,6 @@ p {
   width: 4rem;
   height: 1.5rem;
   border-radius: 0.4rem;
-  background: #77838f;
   bottom: 40px;
   border: none;
   z-index: 1;
@@ -437,6 +436,13 @@ p {
   padding-top: 3px;
   text-align: center;
   font-family: 900;
+}
+
+@media (max-width: 375px) {
+  .post-date {
+    padding-top: 5px;
+    font-size: 1.3rem;
+  }
 }
 
 .pagination {
@@ -654,9 +660,6 @@ Final Section
 @media (max-width: 375px) {
   .finalsection {
     zoom: 0.7;
-  }
-  .post-date {
-    zoom: 0.9;
   }
 }
 

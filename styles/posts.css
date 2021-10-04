@@ -120,7 +120,6 @@ figure {
   border-radius: 5px;
   padding: 15px;
   border: #9052fd 2px solid;
-  margin-bottom: 20px;
   box-shadow: none;
 }
 
@@ -136,7 +135,7 @@ figure {
   border-radius: 5px;
   padding: 15px;
   border: #9052fd 2px solid;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: none;
 }
 
@@ -211,7 +210,7 @@ input {
   padding-right: 25px;
   color: #fff;
   background-color: #9052fd;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Nunito", serif;
   cursor: pointer;
 }
