@@ -39,16 +39,18 @@
           <div id="postAuthor"></div>
         <div id="postContent"></div>
 
-        <div id="postCommentsForm">
+        <div id="postCommentsForm" >
           <h1>Leave a Reply ⩤</h1>
-          <form action="https://harry.josefcarlsson.com/wp-json/wp/v2/comments" method="post">
-          <input type="hidden" id="postId" value={POST_ID} />
-          <input type="text" class="name" placeholder="Enter first name.." required>
-          <input type="email" name="email" class="email" placeholder="Enter email.." required>
-          <textarea id="subject" name="subject" placeholder="Write a comment.." required></textarea>
+          <form action="https://harry.josefcarlsson.com/wp-json/wp/v2/comments" method="post" id="submitComment">
+          <input type="hidden" name="post" id="postId" value={POST_ID} />
+          <input type="text" class="name" placeholder="Enter first name.." id="commentName">
+          <input type="email" name="email" class="email" placeholder="Enter email.." id="commentEmail">
+          <textarea id="subject" name="subject" placeholder="Write a comment.."></textarea>
           <input type="submit" value="Submit" id="">
         </form>
         </div>
+
+        <p id="sentComment" class="refreshShow">Comment sent! Refresh the page to view 😎</p>
 
         <div id="postComments"></div>
        </main>

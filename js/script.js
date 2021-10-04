@@ -149,8 +149,8 @@ function getPosts() {
 }
 
 function getPostFromId() {
+  addSubmitListener();
   var id = JSON.parse(findQuery("id"));
-
   fetch("https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
@@ -165,21 +165,27 @@ function getPostFromId() {
 
 // Wordpress Comment Functions
 
-function postComment() {
+function postComment(event) {
+  event.preventDefault();
+  console.log("here" + event);
   var id = JSON.parse(findQuery("id"));
+  var email = document.getElementById("commentEmail").value;
+  var name = document.getElementById("commentName").value;
+  var subject = document.getElementById("subject").value;
+
   fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ post: id, author_name: "Harry", author_email: "hyates1@gmail.com", content: "test p" }),
+    body: JSON.stringify({ post: id, author_name: name, author_email: email, content: subject }),
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      document.getElementById("postCommentsForm").classList.add("formSent");
+      document.getElementById("sentComment").classList.toggle("refreshShow");
     });
 }
-postComment();
 
 function getComment() {
   var id = JSON.parse(findQuery("id"));
@@ -191,6 +197,10 @@ function getComment() {
         postCommentCard(data[i]);
       }
     });
+}
+
+function addSubmitListener() {
+  document.getElementById("submitComment").addEventListener("submit", postComment);
 }
 
 getComment();
