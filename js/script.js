@@ -138,14 +138,38 @@ function formatDate(date) {
 }
 
 function getPosts() {
-  fetch("https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
-    .then((response) => response.json())
+  var page = JSON.parse(findQuery("page"));
+
+  page = page ? page : 1;
+
+  fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed&per_page=4&page=${page}`)
+    .then((response) => {
+      createPaginationList(response.headers.get("x-wp-totalpages"), page);
+      return response.json();
+    })
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
         let formatedPosts = formatPost(data[i]);
         createPreviewCard(formatedPosts);
       }
     });
+}
+
+function createPaginationList(numberOfPages, currentPage) {
+  for (let i = 0; i < JSON.parse(numberOfPages); i++) {
+    if (i == 0) {
+      document.getElementById("paginationList").innerHTML += `
+    <a href="/?page=${currentPage - 1 == 0 ? "1" : currentPage - 1}" >&laquo</a>`;
+    }
+
+    document.getElementById("paginationList").innerHTML += `
+    <a class="${i + 1 == currentPage ? "active" : ""}" href="/?page=${i + 1}" >${i + 1}</a>`;
+
+    if (i == JSON.parse(numberOfPages) - 1) {
+      document.getElementById("paginationList").innerHTML += `
+      <a href="/?page=${currentPage == JSON.parse(numberOfPages) ? currentPage : currentPage + 1}" >&raquo</a>`;
+    }
+  }
 }
 
 function getPostFromId() {
@@ -222,6 +246,10 @@ function postCommentCard(card) {
   <div class="cardP">${card.content.rendered}</div>
   </div>`;
 }
+
+//Pagination
+
+// "https://harry.josefcarlsson.com/wp-json/wp/v2/posts?per_page=4"
 
 // function getDrink() {
 //   fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")

@@ -152,6 +152,7 @@ figure {
   font-family: "Nunito", serif;
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -265,4 +266,8 @@ form {
 #postComments {
   position: relative;
   margin-top: -30px;
+}
+
+.comments {
+  margin-top: 40px;
 }
