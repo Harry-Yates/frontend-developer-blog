@@ -89,3 +89,7 @@ main {
     border: 1px solid #9052fd;
   }
 }
+
+.pagination {
+  display: none;
+}

@@ -16,7 +16,7 @@
 
     <title>Front End Developer Blog</title>
   </head>
-  <body class="toggle-me" onload="getPosts()">
+  <body class="toggle-me" onload="getAllPosts()">
     <header>
       <! –– Nav Section ––>
 
@@ -34,7 +34,7 @@
       <div id="container-search">
         <div id="search">
           <label for="searchInput">🔍</label>
-          <input id="searchInput" type="text" placeholder="Search posts" />
+          <input id="searchInput" type="text" placeholder="Search all posts" />
         </div>
       </div>
 
@@ -47,6 +47,8 @@
           </section>
         </div>
       </div>
+
+      <div class="pagination" id="paginationList"></div>
     </main>
     <script src="../js/search.js"></script>
     <script src="../js/script.js"></script>

@@ -227,6 +227,15 @@ Profile
   font-size: 0.75rem;
 }
 
+@media (max-width: 375px) {
+  .user-info li {
+    margin-right: 10px;
+  }
+  .user-info ul {
+    margin-right: 10px;
+  }
+}
+
 .user-info li {
   display: -webkit-box;
   display: -ms-flexbox;

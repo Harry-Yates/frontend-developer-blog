@@ -155,6 +155,24 @@ function getPosts() {
     });
 }
 
+function getAllPosts() {
+  var page = JSON.parse(findQuery("page"));
+
+  page = page ? page : 1;
+
+  fetch(`https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed`)
+    .then((response) => {
+      createPaginationList(response.headers.get("x-wp-totalpages"), page);
+      return response.json();
+    })
+    .then((data) => {
+      for (let i = 0; i < data.length; i++) {
+        let formatedPosts = formatPost(data[i]);
+        createPreviewCard(formatedPosts);
+      }
+    });
+}
+
 function createPaginationList(numberOfPages, currentPage) {
   for (let i = 0; i < JSON.parse(numberOfPages); i++) {
     if (i == 0) {
