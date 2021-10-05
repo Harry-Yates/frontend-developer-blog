@@ -63,10 +63,10 @@ function createUserCard(user) {
       <h2>${userID}</h2>
       <h2>Front End Developer Blog</h2>
       <p>I post about CSS, JS, React and answer interview questions. Feel free to reach out and connect via the links below! 🤓<p>
-      <ul>
-        <li>${user.followers} <strong>Followers</strong></li>
-        <li>${user.following} <strong>Following</strong></li>
-        <li>${user.public_repos} <strong>Repos</strong></li>
+      <ul class="repoStatsMain">
+        <li class="repoStats">${user.followers} <strong>Followers</strong></li>
+        <li class="repoStats">${user.following} <strong>Following</strong></li>
+        <li class="repoStats">${user.public_repos} <strong>Repos</strong></li>
       </ul>
       <div id="repos"></div>
        <div class="social-media-icons">

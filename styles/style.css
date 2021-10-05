@@ -228,11 +228,20 @@ Profile
 }
 
 @media (max-width: 375px) {
-  .user-info li {
-    margin-right: 10px;
+  .repoStatsMain {
+    margin: 1rem;
   }
-  .user-info ul {
-    margin-right: 10px;
+  .repoStats {
+    margin: 0.2rem;
+  }
+  #repos {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .user-info p {
+    font-size: 16px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
   }
 }
 
