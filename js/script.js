@@ -61,7 +61,7 @@ function createUserCard(user) {
     </div>
     <div class="user-info">
       <h2>${userID}</h2>
-      <h2>Front End Developer Blog</h2>
+      <h2>Frontend Developer Blog</h2>
       <p>I post about CSS, JS, React and answer interview questions. Feel free to reach out and connect via the links below! 🤓<p>
       <ul class="repoStatsMain">
         <li class="repoStats">${user.followers} <strong>Followers</strong></li>
