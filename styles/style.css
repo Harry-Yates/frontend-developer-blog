@@ -24,9 +24,9 @@ a {
 }
 
 h2 {
-  line-height: 1rem;
-  margin-top: 30px;
-  font-size: 40px;
+  line-height: 3rem;
+  margin: 5px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -111,6 +111,98 @@ nav a:focus {
   border-bottom: 1px solid #8f44fd;
 }
 
+/* Hamburger */
+.navHam {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  .navHam {
+    display: block;
+    visibility: visible;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    position: absolute;
+    width: 260px;
+    left: -260px;
+    height: 100%;
+    background: #27292f;
+    z-index: 9999;
+  }
+  .open {
+    left: 0px;
+  }
+  .menu {
+    list-style-type: none;
+  }
+  .menu__item {
+    font-size: 1.4rem;
+    color: #eee;
+    border-bottom: 2px solid #8f44fd;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .menu__item a {
+    text-transform: none;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background: #111;
+    cursor: pointer;
+  }
+  /**** hamburger icon ****/
+  .hamburger {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    background: #88929c;
+    margin: 6px 0;
+    height: 6px;
+    width: 36px;
+    border-radius: 2px;
+    position: relative;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .change.first-bar {
+    top: 11px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .change.second-bar {
+    opacity: 0;
+  }
+  .change.third-bar {
+    bottom: 13px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  /********** Main Content *********/
+  .content {
+    padding: 2rem;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .shift {
+    margin-left: 260px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+}
+
+/* Main Body */
 main {
   color: #fff;
   font-family: "Poppins", sans-serif;

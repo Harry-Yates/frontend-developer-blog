@@ -28,7 +28,22 @@
             <li><a href="./pages/about.html">Search</a></li>
             <li><a href="../pages/contact.html"">Contact</a></li>
           </ul>
-        </nav>
+          </nav>
+
+          <div class="navHam"> 
+            <img src="../assets/logo/logo.png" alt="logo" class="hi-logo">
+                <ul class="menu">
+                  <li class="menu__item"><a class="current-page" href="../index.html">Latest</a></li>
+                  <li class="menu__item"><a  href="../pages/about.html">Search</a></li>
+                  <li class="menu__item"><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                  <span class="first-bar"></span>
+                  <span class="second-bar"></span>
+                  <span class="third-bar"></span>
+                </div>
+        </div>
 
       </header>
 
@@ -39,7 +54,7 @@
           <hr class="solid">
 
           <! –– Main Blog Section ––>
-          <main>
+          <main class="content">
           <div class="main-post-body" ></div>
             <div class="container-post" >
           <h3 class=" container-post text-align-center " ></h3>
@@ -80,7 +95,6 @@
 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button2">
 </div>
 <div id="mce-responses" class="clear">
-
 <div class="response2" id="mce-error-response" style="display:none"></div>
 <div class="response2" id="mce-success-response" style="display:none"></div>
 </div>    
@@ -107,6 +121,7 @@
   <div class="legals">
     <p>© 2021 Harry Yates Blog. All Rights Reserved.</p>
   </div>
+  <script src="../js/hamburger.js"></script>
    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
       integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
