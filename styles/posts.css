@@ -14,10 +14,9 @@ main {
 #postTitle {
   margin-top: 140px;
   margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 3.5rem;
-  text-decoration: underline;
-  font-weight: 600;
+  font-size: 2/5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {

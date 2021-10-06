@@ -264,36 +264,3 @@ function postCommentCard(card) {
   <div class="cardP">${card.content.rendered}</div>
   </div>`;
 }
-
-//Pagination
-
-// "https://harry.josefcarlsson.com/wp-json/wp/v2/posts?per_page=4"
-
-// function getDrink() {
-//   fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       var drink = data.drinks[0];
-//       var maxNumberOfIngredient = 15;
-//       var post = {
-//         title: drink.strDrink,
-//         content: ["<img src=" + drink.strDrinkThumb + " />", "<p>" + drink.strInstructions + "</p>", "<h3>Ingredients</h3>"],
-//       };
-
-//       for (let i = 0; i < maxNumberOfIngredient; i++) {
-//         if (i === 0) {
-//           post.content.push("<ul>");
-//         }
-
-//         if (drink[`strIngredient${i}`]) {
-//           post.content.push("<li>" + drink[`strIngredient${i}`] + " : " + drink[`strMeasure${i}`] + "</li>");
-//         }
-//         if (i === maxNumberOfIngredient - 1) {
-//           post.content.push("</ul>");
-//         }
-//       }
-
-//       document.getElementById("postContent").innerHTML = "";
-//       populatePost(post);
-//     });
-// }
