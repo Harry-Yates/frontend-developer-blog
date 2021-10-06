@@ -271,3 +271,16 @@ form {
 .comments {
   margin-top: 40px;
 }
+
+@media (max-width: 1024px) {
+  /********** Main Content *********/
+
+  .content {
+    padding: 2rem;
+    transition: 0.3s all ease;
+  }
+  .shift {
+    margin-left: 0px;
+    transition: 0.3s all ease;
+  }
+}
