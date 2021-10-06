@@ -153,7 +153,9 @@ nav a:focus {
     text-decoration: none;
   }
   .menu__item:hover {
-    background: #111;
+    background: #2e3036;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     cursor: pointer;
   }
   /**** hamburger icon ****/
