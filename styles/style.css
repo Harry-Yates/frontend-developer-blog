@@ -299,10 +299,9 @@ Profile
   margin-left: 2rem;
 }
 
-.user.info h2 {
-  margin-top: 100px;
+.user-info h2 {
   color: #828d99;
-  color: pink;
+  line-height: 2.2rem;
 }
 
 .user-info p {
