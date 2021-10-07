@@ -285,12 +285,43 @@ Profile
   transition: -webkit-transform 50s ease;
   transition: transform 50s ease;
   transition: transform 50s ease, -webkit-transform 50s ease;
+  cursor: pointer;
 }
 
 .avatar:hover {
   border: 5px solid #782ceb;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-animation: morph 10s ease-in-out infinite;
+          animation: morph 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+  50% {
+    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+  50% {
+    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
 }
 
 .user-info {
@@ -420,6 +451,36 @@ Profile
 /* =================
 Post Containers
 ================= */
+.fade-in {
+  opacity: 1;
+  -webkit-animation-name: fadeInOpacity;
+          animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

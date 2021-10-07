@@ -105,7 +105,7 @@ function findQuery(param) {
 
 function createPreviewCard(card) {
   var wrapper = document.getElementById("postsSummaries");
-  wrapper.innerHTML += `<li class="card-wrapper__card" data-aos="fade-up" ><a href="../pages/post.html?id=${card.id}">
+  wrapper.innerHTML += `<li class="card-wrapper__card fade-in" data-aos="fade-up" ><a href="../pages/post.html?id=${card.id}">
         <img src="${card.previewImage}" alt="A random image" />
         <div class="card-wrapper__content" >
         <div class="post-date">${card.date}</div>
