@@ -81,7 +81,7 @@ function createUserCard(user) {
   main.innerHTML = cardHTML;
 }
 
-//Post Functions
+//Post Page Functions
 
 function toggleState() {
   document.querySelector(".toggle-me").classList.toggle("active");
@@ -136,6 +136,8 @@ function formatDate(date) {
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   return d.getDate() + " " + monthNames[d.getMonth()];
 }
+
+// Pagination Functions
 
 function getPosts() {
   var page = JSON.parse(findQuery("page"));

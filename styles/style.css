@@ -193,7 +193,6 @@ nav a:focus {
   }
   /********** Main Content *********/
   .content {
-    padding: 2rem;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
   }
@@ -265,7 +264,7 @@ Profile
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 110px;
+  margin-top: 90px;
 }
 
 .card {
