@@ -95,3 +95,8 @@ main {
 .pagination {
   display: none;
 }
+
+#categoriesHolder {
+  background-color: red;
+  color: black;
+}

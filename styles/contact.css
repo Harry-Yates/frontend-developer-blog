@@ -10,6 +10,8 @@ Contact Page
   flex-direction: column;
   background: #f7fafd;
   height: 100vh;
+  width: 50%;
+  min-width: 375px;
 }
 
 .contact-page-frame h1 {
@@ -117,5 +119,32 @@ input:hover {
   .shift {
     margin-left: 0px;
     transition: 0.3s all ease;
+  }
+}
+
+#map {
+  height: 100vh;
+  width: 50%;
+}
+
+.gm-style-iw-d {
+  color: black;
+}
+
+.page-container-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafd;
+}
+
+@media (max-width: 375px) {
+  .page-container-map {
+    flex-direction: column;
+  }
+
+  #map {
+    height: 500px;
+    width: 100%;
   }
 }
