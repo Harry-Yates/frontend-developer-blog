@@ -97,10 +97,55 @@ figure {
   color: #9052fd;
   font-weight: 600;
 }
+@media (max-width: 1011px) {
+  #postComments {
+    zoom: 0.6;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    padding-left: 18px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #postContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .avatar2 {
+    padding-left: 0px;
+  }
+}
 
 @media (max-width: 375px) {
   #postComments {
     zoom: 0.6;
+  }
+
+  img {
+    position: relative;
+    width: 300px;
+    padding-left: 18px;
+  }
+
+  #postContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+  }
+
+  .avatar2 {
+    padding-left: 0px;
   }
 }
 
@@ -282,4 +327,9 @@ form {
     margin-left: 0px;
     transition: 0.3s all ease;
   }
+}
+
+main.content {
+  margin: 0px;
+  padding: 0px;
 }
