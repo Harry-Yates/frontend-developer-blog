@@ -88,6 +88,18 @@ main {
   #searchInput {
     border: 1px solid #9052fd;
   }
+
+  .main-post-body {
+    margin-top: 30px;
+  }
+
+  .content {
+    transition: 0.3s all ease;
+  }
+  .shift {
+    margin-left: 0px;
+    transition: 0.3s all ease;
+  }
 }
 
 .pagination {
@@ -96,7 +108,7 @@ main {
 
 .categoriesHolder {
   color: black;
-  z-index: 9999;
+  z-index: 2;
   padding-top: 0px;
 }
 
@@ -108,7 +120,6 @@ main {
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  display: inline-block;
   border-radius: 5px;
   font-family: Nunito;
   border: none;
