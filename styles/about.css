@@ -96,7 +96,25 @@ main {
   display: none;
 }
 
-#categoriesHolder {
-  background-color: red;
+.categoriesHolder {
   color: black;
+  z-index: 9999;
+}
+
+.category-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #8f44fd;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: Nunito;
+  border: none;
+}
+
+.category-btn:hover {
+  background-color: #782ceb;
 }

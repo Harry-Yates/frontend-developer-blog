@@ -1,5 +1,6 @@
 const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("main");
+let posts = [];
 
 // Git Hub User and Profile Functions
 
@@ -11,7 +12,7 @@ async function getUser(username) {
     createUserCard(data);
     getRepos(username);
   } catch (err) {
-    if (err.response.status === 404) {
+    if (err.response === 404) {
       createErrorCard("No profile with this username");
     }
   }
@@ -139,6 +140,35 @@ function formatDate(date) {
 
 // Pagination Functions
 
+var filterCategories = (filter) => {
+  document.getElementById("postsSummaries").innerHTML = "";
+  for (let i = 0; i < posts.length; i++) {
+    if (filter == "1") {
+      let formatedPosts = formatPost(posts[i]);
+      createPreviewCard(formatedPosts);
+    } else if (posts[i].categories[0] == filter || posts[i].categories[1] == filter || posts[i].categories[2] == filter) {
+      console.log("bleh");
+      let formatedPosts = formatPost(posts[i]);
+      createPreviewCard(formatedPosts);
+    }
+  }
+};
+
+async function getCategories() {
+  const response = await fetch("http://harry.josefcarlsson.com/wp-json/wp/v2/categories");
+  if (!response.ok) {
+    const message = `An error has occured: ${response.status}`;
+    throw new Error(message);
+  }
+  const data = await response.json();
+  return data;
+}
+
+function createCategoryButtons(data) {
+  let container = document.querySelector(".categoriesHolder");
+  container.innerHTML += `<button onclick="filterCategories('${data.id}')" class="category-btn">${data.name}</button>`;
+}
+
 function getPosts() {
   var page = JSON.parse(findQuery("page"));
 
@@ -168,10 +198,19 @@ function getAllPosts() {
       return response.json();
     })
     .then((data) => {
+      posts = data;
       for (let i = 0; i < data.length; i++) {
         let formatedPosts = formatPost(data[i]);
         createPreviewCard(formatedPosts);
       }
+    })
+    .then(() => {
+      getCategories().then((data) => {
+        for (i = 0; i < data.length; i++) {
+          console.log(data[i]);
+          createCategoryButtons(data[i]);
+        }
+      });
     });
 }
 
@@ -246,8 +285,6 @@ function getComment() {
 function addSubmitListener() {
   document.getElementById("submitComment").addEventListener("submit", postComment);
 }
-
-getComment();
 
 function postCommentCard(card) {
   console.log(card);
