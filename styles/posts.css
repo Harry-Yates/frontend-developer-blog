@@ -23,6 +23,14 @@ h2 {
   text-align: center;
 }
 
+h6,
+h5,
+h4,
+h3 {
+  text-align: left;
+  padding-left: 2rem;
+}
+
 @media (max-width: 768px) {
   h2 {
     margin-bottom: 70px;
