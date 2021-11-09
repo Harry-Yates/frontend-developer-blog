@@ -122,7 +122,7 @@ function formatPost(post) {
     id: post.id,
     title: post.title.rendered,
     date: formatDate(post.date),
-    previewImage: post._embedded["wp:featuredmedia"][0].source_url,
+    previewImage: post._embedded[`wp:featuredmedia`][0].source_url,
     shortSummary: post.excerpt.rendered,
     content: post.content.rendered,
   };

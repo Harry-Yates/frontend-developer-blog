@@ -346,3 +346,7 @@ main.content {
   margin: 0px;
   padding: 0px;
 }
+
+#postAuthor {
+  display: none;
+}
