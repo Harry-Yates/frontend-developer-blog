@@ -167,12 +167,12 @@ function createCategoryButtons(data) {
   container.innerHTML += `<button onclick="filterCategories('${data.id}')" class="category-btn">${data.name}</button>`;
 }
 
-function getPosts() {
+async function getPosts() {
   var page = JSON.parse(findQuery("page"));
 
   page = page ? page : 1;
 
-  fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed&per_page=4&page=${page}`)
+  await fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed&per_page=4&page=${page}`)
     .then((response) => {
       createPaginationList(response.headers.get("x-wp-totalpages"), page);
       return response.json();
@@ -185,12 +185,12 @@ function getPosts() {
     });
 }
 
-function getAllPosts() {
+async function getAllPosts() {
   var page = JSON.parse(findQuery("page"));
 
   page = page ? page : 1;
 
-  fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed`)
+  await fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed`)
     .then((response) => {
       createPaginationList(response.headers.get("x-wp-totalpages"), page);
       return response.json();
@@ -229,10 +229,10 @@ function createPaginationList(numberOfPages, currentPage) {
   }
 }
 
-function getPostFromId() {
+async function getPostFromId() {
   addSubmitListener();
   var id = JSON.parse(findQuery("id"));
-  fetch("https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
+  await fetch("https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/posts?_embed")
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
@@ -246,7 +246,7 @@ function getPostFromId() {
 
 // Wordpress Comment Functions
 
-function postComment(event) {
+async function postComment(event) {
   event.preventDefault();
   console.log("here" + event);
   var id = JSON.parse(findQuery("id"));
@@ -254,7 +254,7 @@ function postComment(event) {
   var name = document.getElementById("commentName").value;
   var subject = document.getElementById("subject").value;
 
-  fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
+  await fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/comments`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -268,9 +268,9 @@ function postComment(event) {
     });
 }
 
-function getComment() {
+async function getComment() {
   var id = JSON.parse(findQuery("id"));
-  fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/comments?post=${id}`)
+  await fetch(`https://shielded-ridge-56527.herokuapp.com/https://harry.josefcarlsson.com/wp-json/wp/v2/comments?post=${id}`)
     .then((response) => response.json())
     .then((data) => {
       console.log("test data", data);
